@@ -108,5 +108,11 @@
     margin-right: 0px;
   }
   .gitLink{
-      
+      text-decoration: none;
+      position: relative;
+      bottom: 5px;
   }
+
+    .gitLink:hover{
+      text-decoration: underline;  
+    }
