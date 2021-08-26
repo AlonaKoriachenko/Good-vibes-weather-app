@@ -1,0 +1,109 @@
+.card {
+    border-style: solid;
+    border-radius: 20px;
+    display: block;
+    height: 500px;
+    margin: 40px 50px;
+    width: 500px;
+  }
+  
+  .card-body {
+    background-color: #f7f7f7;
+    border-color: #8cdadb;
+    border-width: 5px;
+    border-style: solid;
+    border-radius: 20px;
+    height: 500px;
+    padding: 0;
+    width: 500px;
+  }
+  
+  h1 {
+    color: #815e94;
+    font-family: "Comfortaa", cursive;
+    padding-left: 15px;
+    padding-top: 10px;
+    margin: 0;
+  }
+  
+  .dayTime {
+    color: #815e94;
+    font-family: "Comfortaa", cursive;
+    padding-left: 15px;
+    font-size: small;
+    margin-bottom: 15px;
+    z-index: 0;
+  }
+  
+  .search-cities {
+    font-family: "Comfortaa", cursive;
+    position: relative;
+    left: 10px;
+    text-decoration: solid;
+    width: 220px;
+    margin-right: 0px;
+    border: 3px solid #8cdadb;
+    border-radius: 7px;
+    z-index: 4px;
+  }
+  .lupa {
+    border: none;
+    position: relative;
+    left: 225px;
+    bottom: 33px;
+    background-color: transparent;
+  }
+  
+  .current {
+    border: none;
+    position: relative;
+    left: 215px;
+    bottom: 33px;
+    background-color: transparent;
+  }
+  
+  h2 {
+    color: #815e94;
+    display: block;
+    font-family: "Comfortaa", cursive;
+    font-size: 115px;
+    margin: 0 0 0 270px;
+    padding-right: 30px;
+    position: relative;
+    bottom: 110px;
+    left: 30px;
+  }
+  
+  h5 {
+    color: #815e94;
+    display: block;
+    font-family: "Comfortaa", cursive;
+    font-size: 30px;
+    margin: 0 0 0 300px;
+    position: relative;
+    bottom: 250px;
+    left: 120px;
+  }
+  .sun {
+    position: relative;
+    bottom: 150px;
+  }
+  .row {
+    border-color: #8cdadb;
+    border-style: solid;
+    border-bottom: none;
+    border-left: none;
+    border-right: none;
+    position: relative;
+    bottom: 140px;
+    margin: 0 1px 0 1px;
+    text-align: center;
+  }
+  
+  .col-2 {
+    color: #815e94;
+    font-family: "Comfortaa", cursive;
+    margin-top: 15px;
+    margin-left: 0;
+    margin-right: 0px;
+  }
