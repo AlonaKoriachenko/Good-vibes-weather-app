@@ -107,10 +107,14 @@
     margin-left: 0;
     margin-right: 0px;
   }
+
+  .bottomLine{
+      position: relative;
+      bottom: 10px;
+  }
+
   .gitLink{
       text-decoration: none;
-      position: relative;
-      bottom: 5px;
   }
 
     .gitLink:hover{
