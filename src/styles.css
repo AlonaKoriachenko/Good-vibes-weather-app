@@ -13,7 +13,7 @@
     border-width: 5px;
     border-style: solid;
     border-radius: 20px;
-    height: 500px;
+    height: 700px;
     padding: 0;
     width: 500px;
   }
@@ -34,7 +34,6 @@
     left: 20px;
     padding-bottom: 5px;
     font-size: small;
-
   }
   
   .search-cities {
@@ -68,12 +67,10 @@
     color: #815e94;
     display: block;
     font-family: "Comfortaa", cursive;
-    font-size: 115px;
-    margin: 0 0 0 270px;
-    padding-right: 30px;
+    font-size: 100px;
     position: relative;
     bottom: 110px;
-    left: 30px;
+    left: 320px;
   }
   
   h5 {
@@ -81,14 +78,15 @@
     display: block;
     font-family: "Comfortaa", cursive;
     font-size: 30px;
-    margin: 0 0 0 300px;
     position: relative;
     bottom: 250px;
-    left: 120px;
+    left:430px;
   }
-  .sun {
+  .sunnyImage {
     position: relative;
-    bottom: 150px;
+    bottom: 130px;
+    left: 110px;
+    width: 250px;
   }
   .row {
     border-color: #8cdadb;
@@ -97,7 +95,7 @@
     border-left: none;
     border-right: none;
     position: relative;
-    bottom: 140px;
+    bottom: 160px;
     margin: 0 1px 0 1px;
     text-align: center;
   }
