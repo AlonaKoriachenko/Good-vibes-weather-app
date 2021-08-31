@@ -16,35 +16,38 @@
         <div class="card">
            
             <div class="card-body">
-
+               <form class="formCity" id="form-city">
+                  <div class="search-cities">
+                     <input
+                       type="text"
+                       placeholder="search"
+                       class="form-control"
+                       id="show-city"
+                       autofocus
+                     />
+                     </div>
+                   <button class="lupa" type="submit">🔍</button>
+                   <button class="current" id = "btn-current">📍</button>
+                  </form>
+                  <span class="line"></span>
               <h1 class="city" id="current-city"> </h1>
                <div class="moreInfo">
               <div class="dayTime" id="day-time">  </div>
               <div class="weatherDescription">Clear</div>
             </div>
-              <form class="formCity" id="form-city">
-               <div class="search-cities">
-                  <input
-                    type="text"
-                    placeholder="search"
-                    class="form-control"
-                    id="show-city"
-                    autofocus
-                  />
-                  </div>
-                <button class="lupa" type="submit">🔍</button>
-                <button class="current" id = "btn-current">📍</button>
-               </form>
-
-              <h2 class="now-temperature" id="temperature"> 
-               
+              <h2 class="now-temperature" id="temperature">    
             </h2>
-             <h5>
-                °C
+             <h5>°C
              </h5>
-            
-            <img src="media/sunny-image.png" class="sunnyImage" />
+             <div class="underTemp">
+               <div> Humidity: 50%</div>
+               <div> Windy: 0.45km/h</div>
 
+            </div>
+            <img src="media/sunny-image.png" class="sunnyImage" />
+           
+            <p class="motivacional">"Life can be beautiful like a sunny day."</p>
+         </br>
             <div class="row">
                 <div class="col-2">
                     FRI
