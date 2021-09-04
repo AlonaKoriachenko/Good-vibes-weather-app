@@ -1,48 +1,78 @@
+body{
+  background-color:#e8eaef;
+}
+
+
+
 .card {
     border-style: none;
     border-radius: 20px;
     display: block;
     height: 500px;
     margin: 40px auto;
-    max-width: 500px;
+    max-width: 360px;
   }
   
   .card-body {
     background:  linear-gradient(180deg, rgb(162, 218, 246) 0%, rgb(195, 246, 246) 23%, rgb(250, 245, 245) 90%);
     border: 2px hidden #8cdadb;
     border-radius: 20px;
-    height: 550px;
+    height: 500px;
     padding: 0;
     width: 360px;
   }
   
    
   .search-cities {
-    font-family: "Comfortaa", cursive;
     position: relative;
     left: 10px;
     top: 20px;
     text-decoration: solid;
-    width: 220px;
+    width: 170px;
+    height:35px;
     margin-right: 0px;
-    border: 3px solid #8cdadb;
+    border: 2px solid #fff;
     border-radius: 7px;
     z-index: 4px;
   }
+
+  .form-control{
+    height: 30px;
+    font-size: 13px;
+    font-family: "Comfortaa", cursive;
+  
+  }
+
   .lupa {
-    border: none;
+    border: solid #ffff 2px;
+    border-radius: 7px;
+    font-size: 12px;
+    font-family: "Comfortaa", cursive;
     position: relative;
-    left: 240px;
-    bottom: 15px;
+    left: 195px;
+    bottom: 12px;
     background-color: transparent;
+    width: 70px;
+  }
+
+  .lupa:hover{
+    background: rgba(255, 255, 255, 0.5);
   }
   
   .current {
-    border: none;
+    border:solid #ffff 2px;
+    border-radius: 7px;
+    font-family: "Comfortaa", cursive;
+    font-size: 12px;
     position: relative;
-    left: 240px;
-    bottom: 15px;
+    left: 200px;
+    bottom: 12px;
     background-color: transparent;
+    width: 70px;
+  }
+
+  .current:hover{
+    background: rgba(255, 255, 255, 0.5);
   }
 
   .line{ 
@@ -75,11 +105,11 @@
     color:black;
     display: block;
     font-family: "Comfortaa", cursive;
-    font-size: 100px;
+    font-size: 80px;
     text-align: right;
     position: relative;
-    margin-right: 30px;
-    bottom: 80px;
+    margin-right: 40px;
+    bottom: 90px;
    
   }
   
@@ -90,7 +120,7 @@
     font-size: 30px;
     margin-top: 5px;
     position: relative;
-    bottom: 215px;
+    bottom: 200px;
     left:315px;
     width: 100%;
   }
@@ -105,10 +135,27 @@
     text-align: right;
 
   }
+
+  .row {
+    background: rgba(255, 255, 255, 0.5);
+    border-radius: 10px;
+    position: relative;
+    bottom: 130px;
+    left: 200px;
+    width: 150px;
+    margin:0;
+  }
   
+  .col-6 {
+    font-family: "Comfortaa", cursive;
+    margin: 8px 0;
+    font-size: 11px;
+    text-align: center;
+    
+  }
   .sunnyImage {
     position: relative;
-    bottom: 230px;
+    bottom: 400px;
     left: 10px;
     width: 180px;
     transform: rotateY(180deg);
@@ -117,33 +164,11 @@
 
   .motivacional{
     position: relative;
-    bottom: 260px;
+    bottom: 425px;
     display: block;
     font-style: italic;
     text-align: center;
   }
-
-  .row {
-    border-color: #ffff;
-    border-style: solid;
-    border-bottom: none;
-    border-left: none;
-    border-right: none;
-    font-size: 13px;
-    position: relative;
-    bottom: 295px;
-    margin: 0 1px 0 1px;
-    text-align: center;
-  }
-  
-  .col-2 {
-    color: #815e94;
-    font-family: "Comfortaa", cursive;
-    margin-top: 15px;
-    margin-left: 0;
-    margin-right: 0px;
-  }
-
   .bottomLine{
       position: relative;
       top: 10px;
