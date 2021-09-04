@@ -35,6 +35,9 @@ function currentDate(date) {
     document.querySelector("#temperature").innerHTML =Math.round(
       response.data.main.temp
     );
+    document.querySelector("#description").innerHTML= response.data.weather[0].description;
+    document.querySelector("#humidity").innerHTML= response.data.main.humidity;
+    document.querySelector("#wind").innerHTML= Math.round(response.data.wind.speed);
   }
   
   function search(event) {
@@ -44,10 +47,16 @@ function currentDate(date) {
   }
   
   function showCurrent(response) {
-    let h1 = document.querySelector("h1");
-    let temperature = document.querySelector("#temperature");
-    temperature.innerHTML = Math.round(response.data.main.temp);
-    h1.innerHTML = response.data.name;
+    let cityElement = document.querySelector("h1");
+    let temperatureElement = document.querySelector("#temperature");
+    let descriptionElement = document.querySelector("#description");
+    let humidityElement = document.querySelector("#humidity");
+    let windElement = document.querySelector("#wind")
+    cityElement.innerHTML = response.data.name;
+    temperatureElement.innerHTML = Math.round(response.data.main.temp);
+    descriptionElement.innerHTML = response.data.weather[0].description;
+    humidityElement.innerHTML= response.data.main.humidity;
+    windElement.innerHTML= Math.round(response.data.wind.speed);
   }
   
   function searchLocation(position) {

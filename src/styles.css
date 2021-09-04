@@ -17,7 +17,7 @@ body{
     background:  linear-gradient(180deg, rgb(162, 218, 246) 0%, rgb(195, 246, 246) 23%, rgb(250, 245, 245) 90%);
     border: 2px hidden #8cdadb;
     border-radius: 20px;
-    height: 500px;
+    height: 520px;
     padding: 0;
     width: 360px;
   }
@@ -100,6 +100,9 @@ body{
     padding-bottom: 5px;
   }
  
+  .weatherDescription:first-letter{
+    text-transform: capitalize;
+  }
   
   h2 {
     color:black;
@@ -133,6 +136,7 @@ body{
     bottom: 150px;
     right: 10px;
     text-align: right;
+    list-style-type:none;
 
   }
 
@@ -140,7 +144,7 @@ body{
     background: rgba(255, 255, 255, 0.5);
     border-radius: 10px;
     position: relative;
-    bottom: 130px;
+    bottom: 140px;
     left: 200px;
     width: 150px;
     margin:0;
@@ -153,7 +157,7 @@ body{
     text-align: center;
     
   }
-  .sunnyImage {
+  .weatherImage {
     position: relative;
     bottom: 400px;
     left: 10px;
@@ -168,11 +172,13 @@ body{
     display: block;
     font-style: italic;
     text-align: center;
+    font-size: 15px;
   }
   .bottomLine{
       position: relative;
       top: 10px;
-      font-size: 14px;
+      font-size: 12px;
+      text-align: center;
   }
 
   .gitLink{

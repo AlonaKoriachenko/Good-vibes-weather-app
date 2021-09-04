@@ -26,27 +26,25 @@
                        autofocus
                      />
                      </div>
-                     <div class="buttonHover">
                    <button class="lupa" type="submit">search</button>
                    <button class="current" id = "btn-current">find me</button>
-                  </div>
                   </form>
                   <span class="line"></span>
                </br>
               <h1 class="city" id="current-city"> </h1>
                <div class="moreInfo">
               <div class="dayTime" id="day-time">  </div>
-              <div class="weatherDescription">Clear</div>
+              <div class="weatherDescription" id="description">Clear</div>
             </div>
               <h2 class="now-temperature" id="temperature">    
             </h2>
              <h5>°C
              </h5>
-             <div class="underTemp">
-               <div> Humidity: 50%</div>
-               <div> Windy: 0.45km/h</div>
+             <ul class="underTemp">
+               <li> Humidity: <span id="humidity"></span>%</li>
+               <li> Windy: <span id="wind"></span>km/h</li>
 
-            </div>
+             </ul>
             <div class="row">
                 <div class="col-6">
                     FRI
