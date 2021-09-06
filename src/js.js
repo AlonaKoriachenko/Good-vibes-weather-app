@@ -48,26 +48,28 @@ function currentDate(date) {
   }
   
   function weatherImages(changeImage){
-    let weatherDescription = changeImage.data.weather[0].description;
-    if (weatherDescription === "clear sky"){
-      document.querySelector("#icon").src = 'media/sunny-image.png';
-    } else if (weatherDescription === "few clouds"){
-      document.querySelector("#icon").src = "media/few-clouds.png";
-    } else if (weatherDescription === "scattered clouds"){
-      document.querySelector("#icon").src = 'media/scattered-clouds.png';
-    } else if (weatherDescription === "broken clouds"){
-      document.querySelector("#icon").src = 'media/broken-clouds.png';
-    } else if (weatherDescription === "shower rain"){
-      document.querySelector("#icon").src='media/shower-rain.png';
-    } else if (weatherDescription === "rain"){
-      document.querySelector("#icon").src = 'media/rain.png';
-    } else if (weatherDescription === "thunderstorm"){
-      document.querySelector("#icon").src = 'media/thunderstorm.png';
-    } else if (weatherDescription === "snow"){
-      document.querySelector("#icon").src = 'media/snow.png';
-    } else if (weatherDescription ==="mist"){
-      document.querySelector("#icon").src = 'media/mist.png';
-    }
+    let weatherDescription = changeImage.data.weather[0].main;
+    let iconElement =document.querySelector("icon");
+    switch(weatherDescription){
+      case "clear sky":  iconElement.setAttribute("src", `media/sunny-image.png`);
+      break;
+      case "few clouds": iconElement.setAttribute("src", `media/few-clouds.png`);
+      break;
+      case "scattered clouds": iconElement.setAttribute("src", `media/scattered-clouds.png`);
+      break;
+      case "broken clouds": iconElement.setAttribute("src", `media/broken-clouds.png`);
+      break;
+      case "shower rain":  iconElement.setAttribute("src",`media/shower-rain.png`);
+      break;
+      case "rain": iconElement.setAttribute("src",`media/rain.png`); 
+      break;
+      case "thunderstorm":iconElement.setAttribute("src", `media/thunderstorm.png`);
+      break;
+      case"snow":iconElement.setAttribute("src", `media/snow.png`);
+      break;
+      case "mist":  iconElement.setAttribute("src", `media/mist.png`);
+      break;
+    } 
   }
 
   function showCurrent(response) {
@@ -81,7 +83,7 @@ function currentDate(date) {
     descriptionElement.innerHTML = response.data.weather[0].description;
     humidityElement.innerHTML= response.data.main.humidity;
     windElement.innerHTML= Math.round(response.data.wind.speed);
-    weatherImages(changeImage);
+    weatherImages();
   }
   
   function searchLocation(position) {
