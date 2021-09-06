@@ -96,8 +96,10 @@ body{
     font-size: small;
     position: relative;
     top: 1px;
-    left: 20px;
+    right:15px;
     padding-bottom: 5px;
+    list-style-type:none;
+    text-align: left;
   }
  
   .weatherDescription:first-letter{
@@ -159,10 +161,9 @@ body{
   }
   .weatherImage {
     position: relative;
-    bottom: 400px;
+    bottom: 410px;
     left: 10px;
     width: 180px;
-    transform: rotateY(180deg);
     
   }
 
