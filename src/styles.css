@@ -8,7 +8,7 @@ body{
     border-style: none;
     border-radius: 20px;
     display: block;
-    height: 500px;
+    height: 530px;
     margin: 40px auto;
     max-width: 360px;
   }
@@ -24,16 +24,15 @@ body{
   
    
   .search-cities {
-    position: relative;
-    left: 10px;
-    top: 20px;
-    text-decoration: solid;
-    width: 170px;
-    height:35px;
-    margin-right: 0px;
     border: 2px solid #fff;
     border-radius: 7px;
-    z-index: 4px;
+    height:35px;
+    left: 10px;
+    margin-right: 0px;
+    position: relative;
+    text-decoration: solid;
+    top: 20px;
+    width: 170px;
   }
 
   .form-control{
@@ -44,14 +43,14 @@ body{
   }
 
   .lupa {
+    background-color: transparent;
     border: solid #ffff 2px;
     border-radius: 7px;
+    bottom: 12px;
     font-size: 12px;
     font-family: "Comfortaa", cursive;
-    position: relative;
     left: 195px;
-    bottom: 12px;
-    background-color: transparent;
+    position: relative;
     width: 70px;
   }
 
@@ -60,14 +59,14 @@ body{
   }
   
   .current {
+    background-color: transparent;
     border:solid #ffff 2px;
     border-radius: 7px;
+    bottom: 12px;
     font-family: "Comfortaa", cursive;
     font-size: 12px;
-    position: relative;
     left: 200px;
-    bottom: 12px;
-    background-color: transparent;
+    position: relative;
     width: 70px;
   }
 
@@ -94,11 +93,11 @@ body{
     display: block;
     font-family: "Comfortaa", cursive;
     font-size: small;
-    position: relative;
-    top: 1px;
-    right:15px;
-    padding-bottom: 5px;
     list-style-type:none;
+    padding-bottom: 5px;
+    position: relative;
+    right:15px;
+    top: 1px;
     text-align: left;
   }
  
@@ -107,79 +106,76 @@ body{
   }
   
   h2 {
+    bottom: 70px;
     color:black;
     display: block;
     font-family: "Comfortaa", cursive;
     font-size: 80px;
-    text-align: right;
-    position: relative;
     margin-right: 40px;
-    bottom: 70px;
-   
+    position: relative;
+    right: 5px;
+    text-align: right;
   }
   
   h5 {
+    bottom: 165px;
     color: black;
     display: block;
     font-family: "Comfortaa", cursive;
     font-size: 30px;
+    left:315px;
     margin-top: 5px;
     position: relative;
-    bottom: 165px;
-    left:315px;
     width: 100%;
   }
 
   .underTemp{
+    bottom: 140px;
     color: black;
     font-family: "Comfortaa", cursive;
     font-size: 11px;
+    list-style-type:none;
     position: relative;
-    bottom: 140px;
     right: 10px;
     text-align: right;
-    list-style-type:none;
-
   }
 
   .row {
     background: rgba(255, 255, 255, 0.5);
     border-radius: 10px;
-    position: relative;
     bottom: 140px;
     left: 200px;
-    width: 150px;
     margin:0;
+    position: relative;
+    width: 150px;  
   }
   
   .col-6 {
     font-family: "Comfortaa", cursive;
-    margin: 8px 0;
     font-size: 11px;
-    text-align: center;
-    
+    margin: 8px 0;
+    text-align: center;  
   }
   .weatherImage {
-    position: relative;
     bottom: 410px;
     left: 10px;
-    width: 180px;
-    
+    position: relative;
+    width: 180px;  
   }
 
   .motivacional{
-    position: relative;
     bottom: 415px;
     display: block;
-    font-style: italic;
-    text-align: center;
     font-size: 13px;
+    font-style: italic;
+    position: relative;
+    text-align: center;
   }
   .bottomLine{
-      position: relative;
-      top: 10px;
       font-size: 11px;
+      position: relative;
       text-align: center;
+      top: 10px;  
   }
 
   .gitLink{
