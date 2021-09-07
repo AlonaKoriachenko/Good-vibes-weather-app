@@ -41,20 +41,21 @@ function currentDate(date) {
     
     let weatherName = response.data.weather[0].main;
     let iconElement = document.querySelector("#icon");
+    let messageElement = document.querySelector("#message");
     switch(weatherName){
-      case "Clear":  iconElement.src = "media/sunny-Image.png";
+      case "Clear":  iconElement.src = "media/sunny-Image.png"; messageElement.innerHTML =`"Life can be beautiful like a sunny day!"`;
       break;
-      case "Clouds": iconElement.src = "media/few-clouds.png";
+      case "Clouds": iconElement.src = "media/few-clouds.png"; messageElement.innerHTML = `"There is a blue sky behind these clouds. They will pass..."`;
       break;
-      case "Drizzle":  iconElement.src = "media/shower-rain.png";
+      case "Drizzle":  iconElement.src = "media/shower-rain.png";messageElemente.innerHTML = `"Listen to the rain...There is a lot of wisdom in it."`;
       break;
-      case "Rain": iconElement.src = "media/rain.png"; 
+      case "Rain": iconElement.src = "media/rain.png"; messageElemente.innerHTML = `"The rain is as necessary as the sun. There is time for everything."`;
       break;
-      case "Thunderstorm":iconElement.src = "media/thunderstorm.png";
+      case "Thunderstorm":iconElement.src = "media/thunderstorm.png"; messageElement.innerHTML = `"Life can be as unpredictable as a storm. Always be prepared for anything!"`
       break;
-      case"Snow":iconElement.src= "media/snow.png";
+      case"Snow":iconElement.src= "media/snow.png"; messageElement.innerHTML =`"Snow brings with it the cold, but also an incomparable beauty... And so is life."`
       break;
-      default:  iconElement.src= "media/mist.png";
+      default:  iconElement.src= "media/mist.png"; messageElement.innerHTML= `"Everything seems not so clear, but if we wait a bit we will start to understand."`
     } 
   }
   
@@ -78,19 +79,19 @@ function currentDate(date) {
     let weatherName = response.data.weather[0].main;
     let iconElement = document.querySelector("#icon");
     switch(weatherName){
-      case "Clear":  iconElement.src = "media/sunny-Image.png";
+      case "Clear":  iconElement.src = "media/sunny-Image.png"; messageElement.innerHTML =`"Life can be beautiful like a sunny day!"`;
       break;
-      case "Clouds": iconElement.src = "media/few-clouds.png";
+      case "Clouds": iconElement.src = "media/few-clouds.png"; messageElement.innerHTML = `"There is a blue sky behind these clouds. They will pass..."`;
       break;
-      case "Drizzle":  iconElement.src = "media/shower-rain.png";
+      case "Drizzle":  iconElement.src = "media/shower-rain.png";messageElemente.innerHTML = `"Listen to the rain...There is a lot of wisdom in it."`;
       break;
-      case "Rain": iconElement.src = "media/rain.png"; 
+      case "Rain": iconElement.src = "media/rain.png"; messageElemente.innerHTML = `"The rain is as necessary as the sun. There is time for everything."`;
       break;
-      case "Thunderstorm":iconElement.src = "media/thunderstorm.png";
+      case "Thunderstorm":iconElement.src = "media/thunderstorm.png"; messageElement.innerHTML = `"Life can be as unpredictable as a storm. Always be prepared for anything!"`
       break;
-      case"Snow":iconElement.src= "media/snow.png";
+      case"Snow":iconElement.src= "media/snow.png"; messageElement.innerHTML =`"Snow brings with it the cold, but also an incomparable beauty... And so is life."`
       break;
-      default:  iconElement.src= "media/mist.png";
+      default:  iconElement.src= "media/mist.png"; messageElement.innerHTML= `"Everything seems not so clear, but if we wait a bit we will start to understand."`
     } 
     
   }
