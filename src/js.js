@@ -47,9 +47,9 @@ function currentDate(date) {
       break;
       case "Clouds": iconElement.src = "media/few-clouds.png"; messageElement.innerHTML = `"There is a blue sky behind these clouds. They will pass..."`;
       break;
-      case "Drizzle":  iconElement.src = "media/shower-rain.png";messageElemente.innerHTML = `"Listen to the rain...There is a lot of wisdom in it."`;
+      case "Drizzle":  iconElement.src = "media/shower-rain.png";messageElement.innerHTML = `"Listen to the rain...There is a lot of wisdom in it."`;
       break;
-      case "Rain": iconElement.src = "media/rain.png"; messageElemente.innerHTML = `"The rain is as necessary as the sun. There is time for everything."`;
+      case "Rain": iconElement.src = "media/rain.png"; messageElement.innerHTML = `"The rain is as necessary as the sun. There is time for everything."`;
       break;
       case "Thunderstorm":iconElement.src = "media/thunderstorm.png"; messageElement.innerHTML = `"Life can be as unpredictable as a storm. Always be prepared for anything!"`
       break;
@@ -83,9 +83,9 @@ function currentDate(date) {
       break;
       case "Clouds": iconElement.src = "media/few-clouds.png"; messageElement.innerHTML = `"There is a blue sky behind these clouds. They will pass..."`;
       break;
-      case "Drizzle":  iconElement.src = "media/shower-rain.png";messageElemente.innerHTML = `"Listen to the rain...There is a lot of wisdom in it."`;
+      case "Drizzle":  iconElement.src = "media/shower-rain.png";messageElement.innerHTML = `"Listen to the rain...There is a lot of wisdom in it."`;
       break;
-      case "Rain": iconElement.src = "media/rain.png"; messageElemente.innerHTML = `"The rain is as necessary as the sun. There is time for everything."`;
+      case "Rain": iconElement.src = "media/rain.png"; messageElement.innerHTML = `"The rain is as necessary as the sun. There is time for everything."`;
       break;
       case "Thunderstorm":iconElement.src = "media/thunderstorm.png"; messageElement.innerHTML = `"Life can be as unpredictable as a storm. Always be prepared for anything!"`
       break;
