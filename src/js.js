@@ -53,7 +53,7 @@ function currentDate(date) {
       break;
       case "Thunderstorm":iconElement.src = "media/thunderstorm.png"; messageElement.innerHTML = `"Life can be as unpredictable as a storm. Always be prepared for anything!"`
       break;
-      case"Snow":iconElement.src= "media/snow.png"; messageElement.innerHTML =`"Snow brings with it the cold, but also an incomparable beauty... And so is life."`
+      case"Snow":iconElement.src= "media/snow.png"; messageElement.innerHTML =`"Snow brings the cold, but also an incomparable beauty... And so is life."`
       break;
       default:  iconElement.src= "media/mist.png"; messageElement.innerHTML= `"Everything seems not so clear, but if we wait a bit we will start to understand."`
     } 
@@ -89,7 +89,7 @@ function currentDate(date) {
       break;
       case "Thunderstorm":iconElement.src = "media/thunderstorm.png"; messageElement.innerHTML = `"Life can be as unpredictable as a storm. Always be prepared for anything!"`
       break;
-      case"Snow":iconElement.src= "media/snow.png"; messageElement.innerHTML =`"Snow brings with it the cold, but also an incomparable beauty... And so is life."`
+      case"Snow":iconElement.src= "media/snow.png"; messageElement.innerHTML =`"Snow brings the cold, but also an incomparable beauty... And so is life."`
       break;
       default:  iconElement.src= "media/mist.png"; messageElement.innerHTML= `"Everything seems not so clear, but if we wait a bit we will start to understand."`
     } 
