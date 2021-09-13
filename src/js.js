@@ -48,28 +48,43 @@ function getForecast(coordinates){
   axios.get(apiUrl).then(displayForecast);
 }
 
+function daysName(timestamp){
+  let date = new Date(timestamp * 1000);
+  let day = date.getDay();
+  let days = ["Sun", "Mon","Tue","Wed","Thu","Fri", "Sat"];
+  return days[day];
+}
+
 function displayForecast(response){
+  let forecast = response.data.daily;
+  console.log(forecast);
+
   let forecastElement = document.querySelector("#forecast");
-  let days = ["FRI","SAT","SUN","MON","TUE","WED"];
+
   let forecastHTML = `<div class="row">`;
-  days.forEach(function(day){
+  forecast.forEach(function(forecastDay, index){
+    if (index < 6){
     forecastHTML = forecastHTML +
     `
       <div class="col-6">
-        ${day}
+        ${daysName(forecastDay.dt)}
         </br>
-        ☀️ 
+        <img
+        src="http://openweathermap.org/img/wn/${forecastDay.weather[0].icon}@2x.png"
+        alt=""
+        width="30"
+      /> 
         </br>
           <span class="forecast-max">
-        20°
+        ${Math.round(forecastDay.temp.max)}°
           </span>
           <span class="forecast-min">
-         18°
+         ${Math.round(forecastDay.temp.min)}°
           </span>
       </div>
       `;
     }
-    );
+  });
   
   forecastHTML= forecastHTML + `</div>`;
   forecastElement.innerHTML = forecastHTML;
@@ -79,7 +94,7 @@ function displayForecast(response){
     let units = "metric";
     let apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}&units=${units}`;
   
-    axios.get(apiUrl).then(displayCity);
+    axios.get(apiUrl).then(displayCity,displayForecast);
   }
 
   
@@ -113,7 +128,7 @@ function displayForecast(response){
     humidityElement.innerHTML= response.data.main.humidity;
     windElement.innerHTML= Math.round(response.data.wind.speed);
    
-  backgroundImage(response);    
+  backgroundImage(response); 
   }
   
   function searchLocation(position) {
