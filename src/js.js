@@ -43,8 +43,39 @@ function backgroundImage(response){
 
 }  
 
-  function nowCity(city) {
-    let apiKey = "55e4edd7cf6872d232f9af728b279efd";
+function getForecast(coordinates){
+  let apiUrl = `https://api.openweathermap.org/data/2.5/onecall?lat=${coordinates.lat}&lon=${coordinates.lon}&appid=${apiKey}&units=metric`;
+  axios.get(apiUrl).then(displayForecast);
+}
+
+function displayForecast(response){
+  let forecastElement = document.querySelector("#forecast");
+  let days = ["FRI","SAT","SUN","MON","TUE","WED"];
+  let forecastHTML = `<div class="row">`;
+  days.forEach(function(day){
+    forecastHTML = forecastHTML +
+    `
+      <div class="col-6">
+        ${day}
+        </br>
+        ☀️ 
+        </br>
+          <span class="forecast-max">
+        20°
+          </span>
+          <span class="forecast-min">
+         18°
+          </span>
+      </div>
+      `;
+    }
+    );
+  
+  forecastHTML= forecastHTML + `</div>`;
+  forecastElement.innerHTML = forecastHTML;
+}
+
+  function nowCity(city) { 
     let units = "metric";
     let apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}&units=${units}`;
   
@@ -58,7 +89,9 @@ function backgroundImage(response){
     document.querySelector("#description").innerHTML= response.data.weather[0].description;
     document.querySelector("#humidity").innerHTML= response.data.main.humidity;
     document.querySelector("#wind").innerHTML= Math.round(response.data.wind.speed);
-    
+
+    getForecast(response.data.coord);
+
     backgroundImage(response);
   }
   
@@ -84,7 +117,6 @@ function backgroundImage(response){
   }
   
   function searchLocation(position) {
-    let apiKey = "55e4edd7cf6872d232f9af728b279efd";
     let lat = position.coords.latitude;
     let lon = position.coords.longitude;
     let url = `https://api.openweathermap.org/data/2.5/weather?lat=${lat}&lon=${lon}&units=metric&appid=${apiKey}&units=metric`;
@@ -101,12 +133,10 @@ function backgroundImage(response){
   let currentDay = document.querySelector("#day-time");
   currentDay.innerHTML = currentDate(now);
   
-  //Searched City
+  //Search
   let form = document.querySelector("#form-city");
   form.addEventListener("submit", search);
-  
-  // Current City
-  
+  let apiKey = "55e4edd7cf6872d232f9af728b279efd";
   let current = document.getElementById("btn-current");
   current.addEventListener("click", searchCurrent);
   
