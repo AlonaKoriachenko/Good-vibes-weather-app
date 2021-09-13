@@ -156,6 +156,11 @@ body{
     margin: 8px 0;
     text-align: center;  
   }
+
+.forecast-min{
+  opacity: 0.5;
+}
+
   .weatherImage {
     bottom: 410px;
     left: 10px;

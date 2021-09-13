@@ -21,25 +21,8 @@ function currentDate(date) {
   
     return `${day}, ${hour}:${minutes}`;
   }
-    
-
-  function nowCity(city) {
-    let apiKey = "55e4edd7cf6872d232f9af728b279efd";
-    let units = "metric";
-    let apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}&units=${units}`;
-  
-    axios.get(apiUrl).then(displayCity);
-  }
-
-  
-  function displayCity(response) {
-    document.querySelector("h1").innerHTML = response.data.name;
-    document.querySelector("#temperature").innerHTML =Math.round(response.data.main.temp);
-    document.querySelector("#description").innerHTML= response.data.weather[0].description;
-    document.querySelector("#humidity").innerHTML= response.data.main.humidity;
-    document.querySelector("#wind").innerHTML= Math.round(response.data.wind.speed);
-    
-    let weatherName = response.data.weather[0].main;
+function backgroundImage(response){
+  let weatherName = response.data.weather[0].main;
     let iconElement = document.querySelector("#icon");
     let messageElement = document.querySelector("#message");
     switch(weatherName){
@@ -57,6 +40,26 @@ function currentDate(date) {
       break;
       default:  iconElement.src= "media/mist.png"; messageElement.innerHTML= `"Everything seems not so clear, but if we wait a bit we will start to understand."`
     } 
+
+}  
+
+  function nowCity(city) {
+    let apiKey = "55e4edd7cf6872d232f9af728b279efd";
+    let units = "metric";
+    let apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}&units=${units}`;
+  
+    axios.get(apiUrl).then(displayCity);
+  }
+
+  
+  function displayCity(response) {
+    document.querySelector("h1").innerHTML = response.data.name;
+    document.querySelector("#temperature").innerHTML =Math.round(response.data.main.temp);
+    document.querySelector("#description").innerHTML= response.data.weather[0].description;
+    document.querySelector("#humidity").innerHTML= response.data.main.humidity;
+    document.querySelector("#wind").innerHTML= Math.round(response.data.wind.speed);
+    
+    backgroundImage(response);
   }
   
   function search(event) {
@@ -76,24 +79,8 @@ function currentDate(date) {
     descriptionElement.innerHTML = response.data.weather[0].description;
     humidityElement.innerHTML= response.data.main.humidity;
     windElement.innerHTML= Math.round(response.data.wind.speed);
-    let weatherName = response.data.weather[0].main;
-    let iconElement = document.querySelector("#icon");
-    switch(weatherName){
-      case "Clear":  iconElement.src = "media/sunny-Image.png"; messageElement.innerHTML =`"Life can be beautiful like a sunny day!"`;
-      break;
-      case "Clouds": iconElement.src = "media/few-clouds.png"; messageElement.innerHTML = `"There is a blue sky behind these clouds. They will pass..."`;
-      break;
-      case "Drizzle":  iconElement.src = "media/shower-rain.png";messageElement.innerHTML = `"Listen to the rain...There is a lot of wisdom in it."`;
-      break;
-      case "Rain": iconElement.src = "media/rain.png"; messageElement.innerHTML = `"The rain is as necessary as the sun. There is time for everything."`;
-      break;
-      case "Thunderstorm":iconElement.src = "media/thunderstorm.png"; messageElement.innerHTML = `"Life can be as unpredictable as a storm. Always be prepared for anything!"`
-      break;
-      case"Snow":iconElement.src= "media/snow.png"; messageElement.innerHTML =`"Snow brings the cold, but also an incomparable beauty... And so is life."`
-      break;
-      default:  iconElement.src= "media/mist.png"; messageElement.innerHTML= `"Everything seems not so clear, but if we wait a bit we will start to understand."`
-    } 
-    
+   
+  backgroundImage(response);    
   }
   
   function searchLocation(position) {
