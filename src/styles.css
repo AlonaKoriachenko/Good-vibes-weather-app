@@ -1,4 +1,4 @@
-body{
+.page-body{
   background-color:#e8eaef;
 }
 
@@ -14,7 +14,7 @@ body{
   }
   
   .card-body {
-    background:  linear-gradient(180deg, rgb(162, 218, 246) 0%, rgb(195, 246, 246) 23%, rgb(250, 245, 245) 90%);
+    
     border: 2px hidden #8cdadb;
     border-radius: 20px;
     height: 570px;
@@ -162,6 +162,7 @@ body{
 }
 
 .weatherImage {
+    border-radius: 5px;
     bottom: 440px;
     left: 10px;
     position: relative;
@@ -169,7 +170,7 @@ body{
   }
 
   .motivacional{
-    bottom: 440px;
+    bottom: 430px;
     display: block;
     font-size: 13px;
     font-style: italic;

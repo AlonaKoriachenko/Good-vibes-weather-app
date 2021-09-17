@@ -25,20 +25,35 @@ function backgroundImage(response){
   let weatherName = response.data.weather[0].main;
     let iconElement = document.querySelector("#icon");
     let messageElement = document.querySelector("#message");
+    let colorElement = document.querySelector(".card-body");
     switch(weatherName){
-      case "Clear":  iconElement.src = "media/sunny-Image.png"; messageElement.innerHTML =`"Life can be beautiful like a sunny day!"`;
+      case "Clear": iconElement.src = "media/sunny-Image.png"; 
+                    messageElement.innerHTML =`"Life can be beautiful like a sunny day!"`;
+                    colorElement.style.background ="linear-gradient(180deg, rgb(162, 218, 246) 0%, rgb(195, 246, 246) 23%, rgb(250, 245, 245) 90%)";
       break;
-      case "Clouds": iconElement.src = "media/few-clouds.png"; messageElement.innerHTML = `"There is a blue sky behind these clouds. They will pass..."`;
+      case "Clouds": iconElement.src = "media/few-clouds.png"; 
+                      messageElement.innerHTML = `"There is a blue sky behind these clouds. They will pass..."`;
+                      colorElement.style.background = "linear-gradient(178deg, rgb(141, 185, 223) 0%, rgb(187, 205, 224) 11%, rgb(245, 248, 250) 65%)";
       break;
-      case "Drizzle":  iconElement.src = "media/shower-rain.png";messageElement.innerHTML = `"Listen to the rain...There is a lot of wisdom in it."`;
+      case "Drizzle": iconElement.src = "media/shower-rain.png";
+                      messageElement.innerHTML = `"Listen to the rain...There is a lot of wisdom in it."`; 
+                      colorElement.style.background = "linear-gradient(178deg, rgb(210, 225, 249) 19%, rgb(200, 228, 236) 33%, rgb(245, 248, 250) 65%)";
       break;
-      case "Rain": iconElement.src = "media/rain.png"; messageElement.innerHTML = `"The rain is as necessary as the sun. There is time for everything."`;
+      case "Rain": iconElement.src = "media/rain.png"; 
+                   messageElement.innerHTML = `"The rain is as necessary as the sun. There is time for everything."`; 
+                    colorElement.style.background = "linear-gradient(178deg, rgb(177, 189, 220) 5%, rgb(216, 223, 239) 44%, rgb(245, 248, 250) 78%)";
       break;
-      case "Thunderstorm":iconElement.src = "media/thunderstorm.png"; messageElement.innerHTML = `"Life can be as unpredictable as a storm. Always be prepared for anything!"`
+      case "Thunderstorm":iconElement.src = "media/thunderstorm.png"; 
+                          messageElement.innerHTML = `"Life can be as unpredictable as a storm. Always be prepared for anything!"`;
+                          colorElement.style.background ="linear-gradient(161deg, rgb(29, 53, 73) 0%, rgb(200, 211, 224) 73%, rgb(245, 248, 250) 100%)";
       break;
-      case"Snow":iconElement.src= "media/snow.png"; messageElement.innerHTML =`"Snow brings the cold, but also an incomparable beauty... And so is life."`
+      case"Snow":iconElement.src= "media/snow.png"; 
+                  messageElement.innerHTML =`"Snow brings the cold, but also an incomparable beauty... And so is life."`;
+                  colorElement.style.background ="linear-gradient(178deg, rgb(222, 230, 231) 0%, rgb(231, 241, 241) 52%, rgb(245, 248, 250) 100%)";
       break;
-      default:  iconElement.src= "media/mist.png"; messageElement.innerHTML= `"Everything seems not so clear, but if we wait a bit we will start to understand."`
+      default:  iconElement.src= "media/mist.png"; 
+                messageElement.innerHTML= `"Everything seems not so clear, but if we wait a bit we will start to understand."`;
+                colorElement.style.background ="linear-gradient(178deg, rgb(183, 190, 183) 0%, rgb(209, 222, 210) 11%, rgb(245, 248, 250) 65%)";
     } 
 
 }  
@@ -57,12 +72,13 @@ function daysName(timestamp){
 
 function displayForecast(response){
   let forecast = response.data.daily;
-  console.log(forecast);
 
   let forecastElement = document.querySelector("#forecast");
 
   let forecastHTML = `<div class="row">`;
   forecast.forEach(function(forecastDay, index){
+   let iconName = forecastDay.weather[0].main;
+
     if (index < 6){
     forecastHTML = forecastHTML +
     `
@@ -70,7 +86,8 @@ function displayForecast(response){
         ${daysName(forecastDay.dt)}
         </br>
         <img
-        src="http://openweathermap.org/img/wn/${forecastDay.weather[0].icon}@2x.png"
+        id ="weatherIcon"
+        src="http://openweathermap.org/img/wn/${iconName}@2x.png"
         alt=""
         width="30"
       /> 
@@ -88,6 +105,23 @@ function displayForecast(response){
   
   forecastHTML= forecastHTML + `</div>`;
   forecastElement.innerHTML = forecastHTML;
+  
+  let iconImage = document.querySelector("#weatherIcon");
+  switch(iconName){
+    case "Clear": iconImage.src="media/icon-sunny.png";
+    break;
+    case "Clouds": iconImage.src="media/icon-few-clouds.png";
+    break;
+    case "Drizzle": iconImage.src="media/icon-shower-rain.png";
+    break;
+    case "Rain": iconImage.src="media/icon-rain.png";
+    break;
+    case "Thunderstorm": iconImage.src="media/icon-thunderstorm.png";
+    break;
+    case "Snow": iconImage.src="media/icon-snow.png";
+    break;
+    default: iconImage.src="media/icon-mist.png";
+  }
 }
 
   function nowCity(city) { 
