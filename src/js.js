@@ -70,15 +70,23 @@ function daysName(timestamp){
   return days[day];
 }
 
+function iconImages(){
+  
+
+  
+}
+
 function displayForecast(response){
   let forecast = response.data.daily;
+  console.log(forecast);
 
   let forecastElement = document.querySelector("#forecast");
 
   let forecastHTML = `<div class="row">`;
-  forecast.forEach(function(forecastDay, index){
-   let iconName = forecastDay.weather[0].main;
 
+  forecast.forEach(function(forecastDay, index){
+    let iconName = forecastDay.weather[0].icon;
+    console.log(iconName);
     if (index < 6){
     forecastHTML = forecastHTML +
     `
@@ -87,8 +95,8 @@ function displayForecast(response){
         </br>
         <img
         id ="weatherIcon"
-        src="http://openweathermap.org/img/wn/${iconName}@2x.png"
-        alt=""
+        src="media/icon-sunny.png"
+        alt="${iconName}"
         width="30"
       /> 
         </br>
@@ -99,29 +107,32 @@ function displayForecast(response){
          ${Math.round(forecastDay.temp.min)}°
           </span>
       </div>
-      `;
-    }
-  });
+      `
+
+    };
   
+ 
+  });
   forecastHTML= forecastHTML + `</div>`;
   forecastElement.innerHTML = forecastHTML;
   
   let iconImage = document.querySelector("#weatherIcon");
-  switch(iconName){
-    case "Clear": iconImage.src="media/icon-sunny.png";
-    break;
-    case "Clouds": iconImage.src="media/icon-few-clouds.png";
-    break;
-    case "Drizzle": iconImage.src="media/icon-shower-rain.png";
-    break;
-    case "Rain": iconImage.src="media/icon-rain.png";
-    break;
-    case "Thunderstorm": iconImage.src="media/icon-thunderstorm.png";
-    break;
-    case "Snow": iconImage.src="media/icon-snow.png";
-    break;
-    default: iconImage.src="media/icon-mist.png";
-  }
+  switch(document.querySelector("#weatherIcon").alt){
+  case "01d","01n": iconImage.src="media/icon-sunny.png";
+  break;
+  case "02d","02n","03d", "03n","04d","04n": iconImage.src="media/icon-few-clouds.png";
+  break;
+  case "09d": iconImage.src="media/icon-shower-rain.png";
+  break;
+  case "10d": iconImage.src="media/icon-rain.png";
+  break;
+  case "11d": iconImage.src="media/icon-thunderstorm.png";
+  break;
+  case "013d": iconImage.src="media/icon-snow.png";
+  break;
+  default: iconImage.src="media/icon-mist.png";
+}
+  
 }
 
   function nowCity(city) { 
