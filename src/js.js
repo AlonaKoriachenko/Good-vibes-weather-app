@@ -22,39 +22,91 @@ function currentDate(date) {
     return `${day}, ${hour}:${minutes}`;
   }
 function backgroundImage(response){
-  let weatherName = response.data.weather[0].main;
+  let weatherName = response.data.weather[0].icon;
     let iconElement = document.querySelector("#icon");
     let messageElement = document.querySelector("#message");
     let colorElement = document.querySelector(".card-body");
     switch(weatherName){
-      case "Clear": iconElement.src = "media/sunny-Image.png"; 
+      case "01d":   iconElement.src = "media/sunny-Image.png"; 
                     messageElement.innerHTML =`"Life can be beautiful like a sunny day!"`;
                     colorElement.style.background ="linear-gradient(180deg, rgb(162, 218, 246) 0%, rgb(195, 246, 246) 23%, rgb(250, 245, 245) 90%)";
       break;
-      case "Clouds": iconElement.src = "media/few-clouds.png"; 
-                      messageElement.innerHTML = `"There is a blue sky behind these clouds. They will pass..."`;
-                      colorElement.style.background = "linear-gradient(178deg, rgb(141, 185, 223) 0%, rgb(187, 205, 224) 11%, rgb(245, 248, 250) 65%)";
+      case "01n": iconElement.src = "media/clear-night.png";
+                  messageElement.innerHTML=`"Have you noticed how beautiful the sky is covered with stars?"`;
+                  colorElement.style.background= "linear-gradient(172deg, rgb(27, 39, 122) 0%, rgb(235, 232, 241) 100%)";
+                  document.querySelector(".city").style.color = "#fff";
+                  document.querySelector(".moreInfo").style.color = "#fff";
+                  document.querySelector(".dayTime").style.color = "#fff";
+                  document.querySelector(".weatherDescription").style.color = "#fff";
+                  document.querySelector(".now-temperature").style.color = "#fff";
+                  document.querySelector(".celsius").style.color = "#fff";
+                  document.querySelector(".underTemp").style.color = "#fff";
       break;
-      case "Drizzle": iconElement.src = "media/shower-rain.png";
-                      messageElement.innerHTML = `"Listen to the rain...There is a lot of wisdom in it."`; 
-                      colorElement.style.background = "linear-gradient(178deg, rgb(210, 225, 249) 19%, rgb(200, 228, 236) 33%, rgb(245, 248, 250) 65%)";
+      case "02d": iconElement.src = "media/few-clouds.png"; 
+                              messageElement.innerHTML = `"There is still a blue sky behind these clouds. They will pass..."`;
+                              colorElement.style.background = "linear-gradient(178deg, rgb(141, 185, 223) 0%, rgb(187, 205, 224) 11%, rgb(245, 248, 250) 65%)";
       break;
-      case "Rain": iconElement.src = "media/rain.png"; 
-                   messageElement.innerHTML = `"The rain is as necessary as the sun. There is time for everything."`; 
-                    colorElement.style.background = "linear-gradient(178deg, rgb(177, 189, 220) 5%, rgb(216, 223, 239) 44%, rgb(245, 248, 250) 78%)";
+      case "03d": iconElement.src = "media/few-clouds.png"; 
+                  messageElement.innerHTML = `"There is still a blue sky behind these clouds. They will pass..."`;
+                  colorElement.style.background = "linear-gradient(178deg, rgb(141, 185, 223) 0%, rgb(187, 205, 224) 11%, rgb(245, 248, 250) 65%)";
       break;
-      case "Thunderstorm":iconElement.src = "media/thunderstorm.png"; 
-                          messageElement.innerHTML = `"Life can be as unpredictable as a storm. Always be prepared for anything!"`;
-                          colorElement.style.background ="linear-gradient(161deg, rgb(29, 53, 73) 0%, rgb(200, 211, 224) 73%, rgb(245, 248, 250) 100%)";
+      case "04d": iconElement.src = "media/few-clouds.png"; 
+                  messageElement.innerHTML = `"There is still a blue sky behind these clouds. They will pass..."`;
+                  colorElement.style.background = "linear-gradient(178deg, rgb(141, 185, 223) 0%, rgb(187, 205, 224) 11%, rgb(245, 248, 250) 65%)";
       break;
-      case"Snow":iconElement.src= "media/snow.png"; 
+      case "02n": iconElement.src = "media/cloudy-night.png"; 
+                              messageElement.innerHTML = `"There are still bright stars behind these clouds. They will pass..."`;
+                              colorElement.style.background = "linear-gradient(180deg, rgb(20, 35, 88) 0%, rgb(39, 42, 143) 41%, rgb(183, 184, 221) 100%)";
+                              document.querySelector(".city").style.color = "#fff";
+                              document.querySelector(".moreInfo").style.color = "#fff";
+                              document.querySelector(".dayTime").style.color = "#fff";
+                              document.querySelector(".weatherDescription").style.color = "#fff";
+                              document.querySelector(".now-temperature").style.color = "#fff";
+                              document.querySelector(".celsius").style.color = "#fff";
+                              document.querySelector(".underTemp").style.color = "#fff";
+      break;
+      case "03n": iconElement.src = "media/cloudy-night.png"; 
+                  messageElement.innerHTML = `"There are still bright stars behind these clouds. They will pass..."`;
+                  colorElement.style.background = "linear-gradient(180deg, rgb(20, 35, 88) 0%, rgb(39, 42, 143) 41%, rgb(183, 184, 221) 100%)";
+                  document.querySelector(".city").style.color = "#fff";
+                  document.querySelector(".moreInfo").style.color = "#fff";
+                  document.querySelector(".dayTime").style.color = "#fff";
+                  document.querySelector(".weatherDescription").style.color = "#fff";
+                  document.querySelector(".now-temperature").style.color = "#fff";
+                  document.querySelector(".celsius").style.color = "#fff";
+                  document.querySelector(".underTemp").style.color = "#fff";
+      break;
+      case "04n": iconElement.src = "media/cloudy-night.png"; 
+                  messageElement.innerHTML = `"There are still bright stars behind these clouds. They will pass..."`;
+                  colorElement.style.background = "linear-gradient(180deg, rgb(20, 35, 88) 0%, rgb(39, 42, 143) 41%, rgb(183, 184, 221) 100%)";
+                  document.querySelector(".city").style.color = "#fff";
+                  document.querySelector(".moreInfo").style.color = "#fff";
+                  document.querySelector(".dayTime").style.color = "#fff";
+                  document.querySelector(".weatherDescription").style.color = "#fff";
+                  document.querySelector(".now-temperature").style.color = "#fff";
+                  document.querySelector(".celsius").style.color = "#fff";
+                  document.querySelector(".underTemp").style.color = "#fff";
+      break;
+      case "09d": iconElement.src = "media/shower-rain.png";
+                  messageElement.innerHTML = `"Listen to the rain...There is a lot of wisdom in it."`; 
+                  colorElement.style.background = "linear-gradient(178deg, rgb(210, 225, 249) 19%, rgb(200, 228, 236) 33%, rgb(245, 248, 250) 65%)";
+      break;
+      case "10d": iconElement.src = "media/rain.png"; 
+                  messageElement.innerHTML = `"The rain is so necessary as the sun. There is time for everything."`; 
+                  colorElement.style.background = "linear-gradient(178deg, rgb(177, 189, 220) 5%, rgb(216, 223, 239) 44%, rgb(245, 248, 250) 78%)";
+      break;
+      case "11d": iconElement.src = "media/thunderstorm.png"; 
+                  messageElement.innerHTML = `"Life can be unpredictable as a storm. Always be prepared for anything!"`;
+                  colorElement.style.background ="linear-gradient(161deg, rgb(29, 53, 73) 0%, rgb(200, 211, 224) 73%, rgb(245, 248, 250) 100%)";
+      break;
+      case"13d":  iconElement.src= "media/snow.png"; 
                   messageElement.innerHTML =`"Snow brings the cold, but also an incomparable beauty... And so is life."`;
                   colorElement.style.background ="linear-gradient(178deg, rgb(222, 230, 231) 0%, rgb(231, 241, 241) 52%, rgb(245, 248, 250) 100%)";
       break;
       default:  iconElement.src= "media/mist.png"; 
                 messageElement.innerHTML= `"Everything seems not so clear, but if we wait a bit we will start to understand."`;
                 colorElement.style.background ="linear-gradient(178deg, rgb(183, 190, 183) 0%, rgb(209, 222, 210) 11%, rgb(245, 248, 250) 65%)";
-    } 
+    } ;
 
 }  
 
@@ -70,10 +122,23 @@ function daysName(timestamp){
   return days[day];
 }
 
-function iconImages(){
-  
+function iconNameFunction(iconName){
 
-  
+  switch(iconName){
+  case "01d": return "media/icon-sunny.png";
+  case "01n": return"media/icon-sunny.png";
+  case "02d": return"media/icon-few-clouds.png";
+  case "02n": return "media/icon-few-clouds.png";
+  case "03d": return "media/icon-few-clouds.png";
+  case "03n": return "media/icon-few-clouds.png";
+  case "04d": return "media/icon-few-clouds.png";
+  case "04n": return "media/icon-few-clouds.png";
+  case "09d": return "media/icon-shower-rain.png";
+  case "10d": return "media/icon-rain.png";
+  case "11d": return "media/icon-thunderstorm.png";
+  case "013d": return "media/icon-snow.png";
+  default: return "media/icon-mist.png";
+}
 }
 
 function displayForecast(response){
@@ -83,7 +148,6 @@ function displayForecast(response){
   let forecastElement = document.querySelector("#forecast");
 
   let forecastHTML = `<div class="row">`;
-
   forecast.forEach(function(forecastDay, index){
     let iconName = forecastDay.weather[0].icon;
     console.log(iconName);
@@ -95,7 +159,7 @@ function displayForecast(response){
         </br>
         <img
         id ="weatherIcon"
-        src="media/icon-sunny.png"
+        src= ${iconNameFunction(iconName)}
         alt="${iconName}"
         width="30"
       /> 
@@ -115,23 +179,6 @@ function displayForecast(response){
   });
   forecastHTML= forecastHTML + `</div>`;
   forecastElement.innerHTML = forecastHTML;
-  
-  let iconImage = document.querySelector("#weatherIcon");
-  switch(document.querySelector("#weatherIcon").alt){
-  case "01d","01n": iconImage.src="media/icon-sunny.png";
-  break;
-  case "02d","02n","03d", "03n","04d","04n": iconImage.src="media/icon-few-clouds.png";
-  break;
-  case "09d": iconImage.src="media/icon-shower-rain.png";
-  break;
-  case "10d": iconImage.src="media/icon-rain.png";
-  break;
-  case "11d": iconImage.src="media/icon-thunderstorm.png";
-  break;
-  case "013d": iconImage.src="media/icon-snow.png";
-  break;
-  default: iconImage.src="media/icon-mist.png";
-}
   
 }
 
