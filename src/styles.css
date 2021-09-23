@@ -201,7 +201,7 @@
   left:7px;
   max-width:60px;
   transform:  rotatez(180deg);
-  top: 365px;
+  top: 330px;
   width: 100%;
   
 }
@@ -229,9 +229,16 @@
     position: relative;
     left:75px;
     max-width:55px;
-    top: 455px;
+    top: 415px;
     width: 100%;
   }
+.sticker{
+  position: relative;
+  max-width: 120px;
+  top: 380px;
+  left:100px;
+}
+
 .bottomLine{
       font-size: 11px;
       position: relative;
