@@ -2,8 +2,6 @@
   background-color:#fff;
 }
 
-
-
 .card {
     border-style: none;
     border-radius: 20px;
@@ -11,6 +9,7 @@
     height: 600px;
     margin: 40px auto;
     max-width: 360px;
+    width: 100%;
   }
   
   .card-body {
@@ -18,23 +17,23 @@
     border: 2px hidden #8cdadb;
     border-radius: 20px;
     box-shadow: -1px 1px 9px rgba(0, 0, 0, 0.3);
-    height: 600px;
+    height: 630px;
     padding: 0;
-    width: 360px;
+    max-width: 380px;
+    width: 100%;
   }
   
-   
   .search-cities {
     border: 2px solid #fff;
     border-radius: 7px;
     box-shadow: -2px 2px 9px rgba(0, 0, 0, 0.4);
     height:35px;
     left: 10px;
-    margin-right: 0px;
     position: relative;
     text-decoration: solid;
     top: 20px;
-    width: 170px;
+    max-width: 170px;
+    width: 100%;
   }
 
   .form-control{
@@ -80,84 +79,93 @@
     color: #fff;
   }
 
-  .line{ 
+  .line-top{ 
     border-bottom: 3px solid #fff;
     display: block;
     position: relative;
     top:10px;
+    width: 100%;
   }
 
-  h1 {
+  .city {
     color:black;
     font-family: 'Cabin Sketch', cursive;
-    font-size: 50px;
+    font-size: 300%;
+    height: 100%;
     padding-left: 15px;
     padding-top: 10px;
+    position: absolute;
     margin: 0;
+    width: 100%; 
   }
 
   .moreInfo{
-    bottom: 5px;
     color: black;
     display: block;
     font-family: 'Finger Paint', cursive;
     font-size: 12px;
+    height: 100%;
     list-style-type:none;
     padding-bottom: 5px;
-    position: relative;
-    right:15px;
-    top: 1px;
+    position: absolute;
+    right: 15px;
     text-align: left;
+    top:145px;
+    width: 100%;
   }
  
   .weatherDescription:first-letter{
     text-transform: capitalize;
   }
   
-  h2 {
-    bottom: 90px;
+  .now-temperature {
+    bottom: 355px;
     color:black;
     display: block;
     font-family: 'Cabin Sketch', cursive;
     font-size: 90px;
     margin-right: 40px;
-    position: relative;
+    position: absolute;
     right: 5px;
     text-align: right;
   }
   
-  h5 {
-    bottom: 195px;
+  .celsius {
     color: black;
     display: block;
     font-family: 'Cabin Sketch', cursive;
     font-size: 40px;
+    height: 100%;
     left:315px;
     margin-top: 5px;
-    position: relative;
+    position: absolute;
+    top:135px;
     width: 100%;
   }
 
   .underTemp{
-    bottom: 175px;
     color: black;
     font-family: 'Finger Paint', cursive;
     font-size: 11px;
+    height: 100%;
     list-style-type:none;
-    position: relative;
+    position: absolute;
     right: 10px;
     text-align: right;
+    top:220px;
+    width: 100%;
   }
 
   .row {
     background: rgba(255, 255, 255, 0.5);
     border-radius: 10px;
-    bottom: 170px;
+    bottom: 110px;
     box-shadow: -5px 5px 2.5px rgb(0, 0, 0, 0.2);
     left: 200px;
     margin:0;
-    position: relative;
-    width: 150px;  
+    position: absolute;
+    max-width: 150px;
+    width: 100%;
   }
   
   .col-6 {
@@ -171,45 +179,60 @@
   opacity: 0.5;
 }
 
-.tape-img{
-  bottom: 413px;
+.yellow-tape{
   position: relative;
   left:248px;
-  width:50px;
+  max-width:50px;
+  top: 163px;
+  width: 100%;
 }
 .weatherImage {
     border-radius: 5px;
-    bottom: 490px;
+    bottom: 100px;
     left: 10px;
-    position: relative;
-    width: 180px;  
+    position: absolute;
+    max-width: 180px; 
+    max-height: 450px;
+    width: 100%; 
   }
 
-.line-bottom{ 
-    border-bottom: 3px solid #fff;
-    bottom: 495px;
-    box-shadow: -1px 1px 9px rgba(0, 0, 0, 0.1);
-    display: block;
-    position: relative;
-  }
+.pink-tape-l{
+  position: relative;
+  left:7px;
+  max-width:60px;
+  transform:  rotatez(180deg);
+  top: 365px;
+  width: 100%;
+  
+}
 
 .motivacional{
     align-items: center;
-    background: rgba(255, 255, 255, 0.5);
+    background: rgba(245, 241, 13, 0.6);
     border-radius: 5px;
-    bottom: 510px;
-    box-shadow: -1px 1px 9px rgba(0, 0, 0, 0.3);
+    box-shadow: 4px 4px 2px rgba(0, 0, 0, 0.2);
     display: flex;
-    font-size: 18px;
+    font-size: 17px;
     font-family: 'Sunshiney', cursive;
-    height: 63px;
+    height: 120px;
     justify-content: center;
-    left: 60px;
-    position: relative;
+    left: 22px;
+    position: absolute;
     text-align: center;
-    width: 260px;
+    text-indent: 7%;
+    max-width: 160px;
+    top:490px;
+    width: 100%;
   }
-  .bottomLine{
+
+.pink-tape-r{
+    position: relative;
+    left:75px;
+    max-width:55px;
+    top: 455px;
+    width: 100%;
+  }
+.bottomLine{
       font-size: 11px;
       position: relative;
       text-align: center;
