@@ -12,82 +12,60 @@
     max-width: 450px;
     width: 100%;
 }
-  
-.search-cities {
-    background-color: #fff;
-    border-radius: 7px;
+
+.form-control{
+  border-radius: 7px;
     box-shadow: -2px 2px 9px rgba(0, 0, 0, 0.4);
-    height:35px;
+    height: 35px;
+    font-size: 13px;
+    font-family: 'Finger Paint', cursive;
     left: 10px;
+    max-width: 350px;
     position: relative;
     text-decoration: solid;
     top: 20px;
-    max-width: 200px;
-    width: 100%;
 }
 
-.form-control{
-    height: 30px;
-    font-size: 13px;
-    font-family: 'Finger Paint', cursive;
-  
-}
-
-.lupa {
-  background-color: rgba(255, 255, 255, 0.5);
-  border-color: transparent;
-  border-radius: 7px;
-    bottom: 5px;
-    box-shadow: -2px 2px 9px rgba(0, 0, 0, 0.4);
-    font-size: 12px;
-    font-family: 'Finger Paint', cursive;
-    left: 230px;
-    position: relative;
-    width: 40px;
-}
-
-.lupa:hover{
-    background: transparent;
-    border:solid rgba(255, 255, 255, 0.5) 2px;
-    color: #fff;
-}
-  
-.current {
-    background-color: rgba(255, 255, 255, 0.5);
-    border-color: transparent;
-    border-radius: 7px;
-    bottom: 20px;
-    box-shadow: -2px 2px 9px rgba(0, 0, 0, 0.4);
-    left: 340px;
-    position: relative;
-    width: 40px;
-}
-.pin-img{
+.magni-img {
+  width: 25px;
+  bottom: 13px;
+  left: 365px;
+  position: relative;
   width: 30px;
-  margin:0 auto;
 }
 
-.current:hover{
-    background: transparent;
-    border:solid rgba(255, 255, 255, 0.5) 2px;
-    color: #fff;
+.magni-img:hover{
+  width: 31px;
+}
+  
+.pin-img{
+  width: 25px;
+  bottom: 13px;
+  left: 375px;
+  position: relative;
+  width: 28px;
+}
+
+.pin-img:hover{
+   width: 30px;
 }
 
 .line-top{ 
     border-bottom: 3px solid #fff;
     display: block;
     position: relative;
-    top:10px;
+    top:3px;
     width: 100%;
 }
 
 .city {
     color:black;
     font-family: 'Cabin Sketch', cursive;
-    font-size:50px;
+    font-size: 4vw;
     padding-left: 15px;
-    padding-top: 10px;
-    margin: 0; 
+    padding-top: 12px;
+    margin: 0;
+    width: 100%;
 }
 
 .moreInfo{
@@ -136,14 +114,16 @@
 }
  
 .size-temperature{
-  height:155px;
+  height:145px;
   text-align: right;
 }
 
 .now-temperature {
     font-family: 'Cabin Sketch', cursive;
-    font-size: 150px;
+    font-size: 130px;
     margin: 0; 
+    position: relative;
+    left: 5px;
     text-align: right;
     
 }
@@ -157,7 +137,6 @@
 }
 
 .underTemp{
-    color: black;
     font-family: 'Finger Paint', cursive;
     font-size: 11px;
     list-style-type:none;
@@ -201,7 +180,7 @@
     max-height: 450px;
     position: absolute;
     left:15px;
-    top:230px;
+    top:200px;
 }
 
 .pink-tape-l{
