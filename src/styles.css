@@ -1,29 +1,18 @@
 .page-body{
   background-color:#fff;
-}
-
-.card {
-    border-style: none;
-    border-radius: 20px;
-    display: block;
-    height: 600px;
-    margin: 40px auto;
-    max-width: 360px;
-    width: 100%;
-  }
-  
-  .card-body {
-    
-    border: 2px hidden #8cdadb;
+}  
+.card { 
     border-radius: 20px;
     box-shadow: -1px 1px 9px rgba(0, 0, 0, 0.3);
-    height: 630px;
+    display: block;
+    height: 720px;
     padding: 0;
-    max-width: 380px;
+    margin: 30px auto;
+    max-width: 450px;
     width: 100%;
-  }
+}
   
-  .search-cities {
+.search-cities {
     border: 2px solid #fff;
     border-radius: 7px;
     box-shadow: -2px 2px 9px rgba(0, 0, 0, 0.4);
@@ -34,16 +23,16 @@
     top: 20px;
     max-width: 170px;
     width: 100%;
-  }
+}
 
-  .form-control{
+.form-control{
     height: 30px;
     font-size: 13px;
     font-family: 'Finger Paint', cursive;
   
-  }
+}
 
-  .lupa {
+.lupa {
     background-color:rgba(255, 255, 255, 0.5);
     border: solid #ffff 2px;
     border-radius: 7px;
@@ -54,14 +43,14 @@
     left: 195px;
     position: relative;
     width: 70px;
-  }
+}
 
-  .lupa:hover{
+.lupa:hover{
     background: transparent;
     color: #fff;
-  }
+}
   
-  .current {
+.current {
     background-color: rgba(255, 255, 255, 0.5);
     border:solid #ffff 2px;
     border-radius: 7px;
@@ -72,137 +61,151 @@
     left: 200px;
     position: relative;
     width: 70px;
-  }
+}
 
-  .current:hover{
+.current:hover{
     background: transparent;
     color: #fff;
-  }
+}
 
-  .line-top{ 
+.line-top{ 
     border-bottom: 3px solid #fff;
     display: block;
     position: relative;
     top:10px;
     width: 100%;
-  }
+}
 
-  .city {
+.city {
     color:black;
     font-family: 'Cabin Sketch', cursive;
-    font-size: 300%;
-    height: 100%;
+    font-size:50px;
     padding-left: 15px;
     padding-top: 10px;
-    position: absolute;
-    margin: 0;
-    width: 100%; 
-  }
+    margin: 0; 
+}
 
-  .moreInfo{
+.moreInfo{
     color: black;
     display: block;
     font-family: 'Finger Paint', cursive;
     font-size: 12px;
-    height: 100%;
     list-style-type:none;
-    padding-bottom: 5px;
-    position: absolute;
-    right: 15px;
+    margin: 0px;
+    padding: 0px 0px 5px 20px;
     text-align: left;
-    top:145px;
-    width: 100%;
-  }
+    width: 150px;
+}
  
-  .weatherDescription:first-letter{
+.weatherDescription:first-letter{
     text-transform: capitalize;
-  }
-  
-  .now-temperature {
-    bottom: 355px;
-    color:black;
-    display: block;
-    font-family: 'Cabin Sketch', cursive;
-    font-size: 90px;
-    margin-right: 40px;
-    position: absolute;
-    right: 5px;
-    text-align: right;
-  }
-  
-  .celsius {
-    color: black;
-    display: block;
-    font-family: 'Cabin Sketch', cursive;
-    font-size: 40px;
-    height: 100%;
-    left:315px;
-    margin-top: 5px;
-    position: absolute;
-    top:135px;
-    width: 100%;
-  }
+}
 
-  .underTemp{
+.weather.row{
+  margin:0;
+}
+
+.current.left.col-6{
+  background-color: transparent;
+  border: none;
+  box-shadow: none;
+  height: 150px;
+  padding: 0;
+  position: absolute;
+  left:0;
+  top:55px;
+  bottom:0;
+  margin: 8px 0;
+  width: 450px;
+}
+
+.current.right.col-6{
+  background-color: transparent;
+  box-shadow: none;
+  border:none;
+  left:185px;
+  position:relative;
+  text-align: center;
+  top:20px;
+  width: 250px;
+}
+ 
+.size-temperature{
+  height:155px;
+  text-align: right;
+}
+
+.now-temperature {
+    font-family: 'Cabin Sketch', cursive;
+    font-size: 150px;
+    margin: 0; 
+    text-align: right;
+    
+}
+  
+.celsius {
+    font-family: 'Cabin Sketch', cursive;
+    font-size: 60px;
+    position: relative;
+    text-align: right;
+    top:-60px;
+}
+
+.underTemp{
     color: black;
     font-family: 'Finger Paint', cursive;
     font-size: 11px;
-    height: 100%;
     list-style-type:none;
-    position: absolute;
-    right: 10px;
     text-align: right;
-    top:220px;
-    width: 100%;
-  }
+}
 
-  .row {
+.yellow-tape{
+  max-width:60px;
+  position: relative;
+  left: 210px;
+  
+  top: -250px;
+}
+
+.forecast.row {
     background: rgba(255, 255, 255, 0.5);
     border-radius: 10px;
-    bottom: 110px;
-    box-shadow: -5px 5px 2.5px rgb(0, 0, 0, 0.2);
-    left: 200px;
+    box-shadow: 5px 5px 2.5px rgb(0, 0, 0, 0.2);
     margin:0;
-    position: absolute;
-    max-width: 150px;
-    width: 100%;
-  }
-  
-  .col-6 {
+    max-width: 200px;
+    position: relative;
+    left: 230px;
+    top:35px;
+    
+}
+
+.forecast.col-6 {
     font-family: 'Finger Paint', cursive;
-    font-size: 11px;
+    font-size: 13px;
     margin: 8px 0;
     text-align: center;  
-  }
+}
 
 .forecast-min{
   opacity: 0.5;
 }
 
-.yellow-tape{
-  position: relative;
-  left:248px;
-  max-width:50px;
-  top: 163px;
-  width: 100%;
-}
 .weatherImage {
     border-radius: 5px;
-    bottom: 100px;
-    left: 10px;
-    position: absolute;
-    max-width: 180px; 
+    max-width: 200px; 
     max-height: 450px;
-    width: 100%; 
-  }
+    position: absolute;
+    left:15px;
+    top:230px;
+}
 
 .pink-tape-l{
-  position: relative;
-  left:7px;
+  filter:  contrast(180%) saturate(257%);
+  left: 13px;
   max-width:60px;
-  transform:  rotatez(180deg);
-  top: 330px;
-  width: 100%;
+  position: absolute;
+  top: 590px;
+  transform: rotateZ(321deg);
   
 }
 
@@ -214,46 +217,112 @@
     display: flex;
     font-size: 17px;
     font-family: 'Sunshiney', cursive;
-    height: 120px;
+    height: 110px;
     justify-content: center;
-    left: 22px;
-    position: absolute;
+    left: 30px;
+    position: relative;
+    top:-45px;
     text-align: center;
     text-indent: 7%;
     max-width: 160px;
-    top:490px;
-    width: 100%;
-  }
+}
 
 .pink-tape-r{
-    position: relative;
-    left:75px;
-    max-width:55px;
-    top: 415px;
-    width: 100%;
-  }
-.sticker{
+  filter:  contrast(180%) saturate(257%);
+  left:150px;
+  max-width:60px;
+  position: absolute;
+  transform:  rotateZ(321deg);
+  top: 680px;
+}
+
+.sticker-git{
+  left: 235px;
+  max-width: 60px;
   position: relative;
-  max-width: 120px;
-  top: 380px;
-  left:100px;
+  top: -140px;
+}
+
+.hide-git{
+  bottom: 10px;
+  display: none;
+  font-family: 'Finger Paint', cursive;
+  font-size: 10px;
+  left: 220px;
+  position: absolute;
+
+}
+
+.sticker-git:hover{
+  max-width: 70px;
+}
+
+.sticker-git:hover +.hide-git {
+  display:block;
+}
+
+.sticker-lkd{
+  left: 245px;
+  max-width: 60px;
+  position: relative;
+  top: -140px;
+}
+
+.hide-lkd{
+  bottom: 10px;
+  display: none;
+  font-family: 'Finger Paint', cursive;
+  font-size: 10px;
+  left: 315px;
+  position: absolute;
+}
+
+.sticker-lkd:hover{
+  max-width: 70px;
+}
+
+.sticker-lkd:hover +.hide-lkd {
+  display:block;
+}
+
+.sticker-mj{
+  left: 255px;
+  max-width: 40px;
+  position: relative;
+  top: -145px;
+}
+
+.hide-mj{
+  bottom: 10px;
+  display: none;
+  font-family: 'Finger Paint', cursive;
+  font-size: 10px;
+  left: 245px;
+  position: absolute;
+}
+
+.sticker-mj:hover{
+  max-width: 45px;
+}
+
+.sticker-mj:hover +.hide-mj {
+  display:block;
 }
 
 .bottomLine{
       font-size: 11px;
-      position: relative;
       text-align: center;
       top: 10px;  
-  }
+}
 
-  .gitLink{
+.gitLink{
       text-decoration: none;
-  }
+}
 
-    .gitLink:hover{
+.gitLink:hover{
       text-decoration: underline;  
-    }
+}
   
-    .pixabay{
+.pixabay{
       list-style-type: none;
-    }
+}

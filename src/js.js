@@ -25,7 +25,7 @@ function backgroundImage(response){
   let weatherName = response.data.weather[0].icon;
     let iconElement = document.querySelector("#icon");
     let messageElement = document.querySelector("#message");
-    let colorElement = document.querySelector(".card-body");
+    let colorElement = document.querySelector(".card");
     switch(weatherName){
       case "01d":   iconElement.src = "media/sunny-Image.png"; 
                     messageElement.innerHTML =`"Life can be beautiful like a sunny day!"`;
@@ -84,7 +84,7 @@ function backgroundImage(response){
       break;
       case "02n": iconElement.src = "media/cloudy-night.png"; 
                               messageElement.innerHTML = `"There are still bright stars behind these clouds. They will pass..."`;
-                              colorElement.style.background = "linear-gradient(180deg, rgb(20, 35, 88) 0%, rgb(132, 148, 198) 41%, rgb(183, 184, 221) 100%)";
+                              colorElement.style.background = "linear-gradient(180deg, rgb(20, 35, 88) 0%, rgb(132, 148, 198) 41%, rgb(225, 237, 227) 100%)";
                               document.querySelector(".city").style.color = "#fff";
                               document.querySelector(".moreInfo").style.color = "#fff";
                               document.querySelector(".dayTime").style.color = "#fff";
@@ -95,7 +95,7 @@ function backgroundImage(response){
       break;
       case "03n": iconElement.src = "media/cloudy-night.png"; 
                   messageElement.innerHTML = `"There are still bright stars behind these clouds. They will pass..."`;
-                  colorElement.style.background = "linear-gradient(180deg, rgb(20, 35, 88) 0%, rgb(132, 148, 198) 41%, rgb(183, 184, 221) 100%)";
+                  colorElement.style.background = "linear-gradient(180deg, rgb(20, 35, 88) 0%, rgb(132, 148, 198) 41%, rgb(225, 237, 227) 100%)";
                   document.querySelector(".city").style.color = "#fff";
                   document.querySelector(".moreInfo").style.color = "#fff";
                   document.querySelector(".dayTime").style.color = "#fff";
@@ -106,7 +106,7 @@ function backgroundImage(response){
       break;
       case "04n": iconElement.src = "media/cloudy-night.png"; 
                   messageElement.innerHTML = `"There are still bright stars behind these clouds. They will pass..."`;
-                  colorElement.style.background = "linear-gradient(180deg, rgb(20, 35, 88) 0%, rgb(132, 148, 198) 41%, rgb(183, 184, 221) 100%)";
+                  colorElement.style.background = "linear-gradient(180deg, rgb(20, 35, 88) 0%, rgb(132, 148, 198) 41%, rgbrgb(225, 237, 227) 100%)";
                   document.querySelector(".city").style.color = "#fff";
                   document.querySelector(".moreInfo").style.color = "#fff";
                   document.querySelector(".dayTime").style.color = "#fff";
@@ -210,21 +210,21 @@ function displayForecast(response){
 
   let forecastElement = document.querySelector("#forecast");
 
-  let forecastHTML = `<div class="row">`;
+  let forecastHTML = `<div class="forecast row">`;
   forecast.forEach(function(forecastDay, index){
     let iconName = forecastDay.weather[0].icon;
     console.log(iconName);
     if (index < 6){
     forecastHTML = forecastHTML +
     `
-      <div class="col-6">
+      <div class="forecast col-6">
         ${daysName(forecastDay.dt)}
         </br>
         <img
         id ="weatherIcon"
         src= ${iconNameFunction(iconName)}
         alt="${iconName}"
-        width="30"
+        width="40"
       /> 
         </br>
           <span class="forecast-max">
