@@ -270,7 +270,7 @@ function displayForecast(response){
   
 }
 
-  function nowCity(city) { 
+  function chosenCity(city) { 
     let units = "metric";
     let apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}&units=${units}`;
   
@@ -293,7 +293,7 @@ function displayForecast(response){
   function search(event) {
     event.preventDefault();
     let city = document.querySelector("#show-city").value;
-    nowCity(city);
+    chosenCity(city);
   }
   
   function searchLocation(position) {
@@ -321,4 +321,4 @@ function displayForecast(response){
   current.addEventListener("click", searchCurrent);
   
   // Load Page
-  nowCity("Berlin");
+  chosenCity("Berlin");
