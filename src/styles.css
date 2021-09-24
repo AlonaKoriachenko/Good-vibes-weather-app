@@ -244,6 +244,7 @@
 }
 
 .hide-git{
+  color: black;
   bottom: 10px;
   display: none;
   font-family: 'Finger Paint', cursive;
@@ -270,6 +271,7 @@
 
 .hide-lkd{
   bottom: 10px;
+  color: black;
   display: none;
   font-family: 'Finger Paint', cursive;
   font-size: 10px;
@@ -294,6 +296,7 @@
 
 .hide-mj{
   bottom: 10px;
+  color: black;
   display: none;
   font-family: 'Finger Paint', cursive;
   font-size: 10px;
@@ -307,22 +310,4 @@
 
 .sticker-mj:hover +.hide-mj {
   display:block;
-}
-
-.bottomLine{
-      font-size: 11px;
-      text-align: center;
-      top: 10px;  
-}
-
-.gitLink{
-      text-decoration: none;
-}
-
-.gitLink:hover{
-      text-decoration: underline;  
-}
-  
-.pixabay{
-      list-style-type: none;
-}
+} 
