@@ -37,6 +37,8 @@ function backgroundImage(response){
                     document.querySelector(".now-temperature").style.color = "black";
                     document.querySelector(".celsius").style.color = "black";
                     document.querySelector(".underTemp").style.color = "black";
+                    document.querySelector(".magni-img").style.filter = "none";
+                    document.querySelector(".pin-img").style.filter = "none";
       break;
       case "01n": iconElement.src = "media/clear-night.png";
                   messageElement.innerHTML=`"Have you noticed how beautiful the sky is covered with stars?"`;
@@ -48,6 +50,8 @@ function backgroundImage(response){
                   document.querySelector(".now-temperature").style.color = "#fff";
                   document.querySelector(".celsius").style.color = "#fff";
                   document.querySelector(".underTemp").style.color = "#fff";
+                  document.querySelector(".magni-img").style.filter = "invert(100%)";
+                  document.querySelector(".pin-img").style.filter = "invert(100%)";
       break;
       case "02d": iconElement.src = "media/few-clouds.png"; 
                               messageElement.innerHTML = `"There is still a blue sky behind these clouds. They will pass..."`;
@@ -59,6 +63,8 @@ function backgroundImage(response){
                               document.querySelector(".now-temperature").style.color = "black";
                               document.querySelector(".celsius").style.color = "black";
                               document.querySelector(".underTemp").style.color = "black";
+                              document.querySelector(".magni-img").style.filter = "none";
+                              document.querySelector(".pin-img").style.filter = "none"; 
       break;
       case "03d": iconElement.src = "media/few-clouds.png"; 
                   messageElement.innerHTML = `"There is still a blue sky behind these clouds. They will pass..."`;
@@ -70,6 +76,8 @@ function backgroundImage(response){
                   document.querySelector(".now-temperature").style.color = "black";
                   document.querySelector(".celsius").style.color = "black";
                   document.querySelector(".underTemp").style.color = "black";
+                  document.querySelector(".magni-img").style.filter = "none";
+                  document.querySelector(".pin-img").style.filter = "none";
       break;
       case "04d": iconElement.src = "media/few-clouds.png"; 
                   messageElement.innerHTML = `"There is still a blue sky behind these clouds. They will pass..."`;
@@ -81,6 +89,8 @@ function backgroundImage(response){
                   document.querySelector(".now-temperature").style.color = "black";
                   document.querySelector(".celsius").style.color = "black";
                   document.querySelector(".underTemp").style.color = "black";
+                  document.querySelector(".magni-img").style.filter = "none";
+                  document.querySelector(".pin-img").style.filter = "none";
       break;
       case "02n": iconElement.src = "media/cloudy-night.png"; 
                               messageElement.innerHTML = `"There are still bright stars behind these clouds. They will pass..."`;
@@ -92,6 +102,8 @@ function backgroundImage(response){
                               document.querySelector(".now-temperature").style.color = "#fff";
                               document.querySelector(".celsius").style.color = "#fff";
                               document.querySelector(".underTemp").style.color = "#fff";
+                              document.querySelector(".magni-img").style.filter = "invert(100%)";
+                              document.querySelector(".pin-img").style.filter = "invert(100%)";
       break;
       case "03n": iconElement.src = "media/cloudy-night.png"; 
                   messageElement.innerHTML = `"There are still bright stars behind these clouds. They will pass..."`;
@@ -103,6 +115,8 @@ function backgroundImage(response){
                   document.querySelector(".now-temperature").style.color = "#fff";
                   document.querySelector(".celsius").style.color = "#fff";
                   document.querySelector(".underTemp").style.color = "#fff";
+                  document.querySelector(".magni-img").style.filter = "invert(100%)";
+                  document.querySelector(".pin-img").style.filter = "invert(100%)";
       break;
       case "04n": iconElement.src = "media/cloudy-night.png"; 
                   messageElement.innerHTML = `"There are still bright stars behind these clouds. They will pass..."`;
@@ -114,6 +128,8 @@ function backgroundImage(response){
                   document.querySelector(".now-temperature").style.color = "#fff";
                   document.querySelector(".celsius").style.color = "#fff";
                   document.querySelector(".underTemp").style.color = "#fff";
+                  document.querySelector(".magni-img").style.filter = "invert(100%)";
+                  document.querySelector(".pin-img").style.filter = "invert(100%)";
       break;
       case "09d": iconElement.src = "media/shower-rain.png";
                   messageElement.innerHTML = `"Listen to the rain...There is a lot of wisdom in it."`; 
@@ -125,6 +141,8 @@ function backgroundImage(response){
                   document.querySelector(".now-temperature").style.color = "black";
                   document.querySelector(".celsius").style.color = "black";
                   document.querySelector(".underTemp").style.color = "black";
+                  document.querySelector(".magni-img").style.filter = "none";
+                  document.querySelector(".pin-img").style.filter = "none";
       break;
       case "10d": iconElement.src = "media/rain.png"; 
                   messageElement.innerHTML = `"The rain is so necessary as the sun. There is time for everything."`; 
@@ -136,6 +154,8 @@ function backgroundImage(response){
                   document.querySelector(".now-temperature").style.color = "black";
                   document.querySelector(".celsius").style.color = "black";
                   document.querySelector(".underTemp").style.color = "black";
+                  document.querySelector(".magni-img").style.filter = "none";
+                  document.querySelector(".pin-img").style.filter = "none";
       break;
       case "11d": iconElement.src = "media/thunderstorm.png"; 
                   messageElement.innerHTML = `"Life can be unpredictable as a storm. Always be prepared for anything!"`;
@@ -147,6 +167,8 @@ function backgroundImage(response){
                   document.querySelector(".now-temperature").style.color = "black";
                   document.querySelector(".celsius").style.color = "black";
                   document.querySelector(".underTemp").style.color = "black";
+                  document.querySelector(".magni-img").style.filter = "none";
+                  document.querySelector(".pin-img").style.filter = "none";
       break;
       case"13d":  iconElement.src= "media/snow.png"; 
                   messageElement.innerHTML =`"Snow brings the cold, but also an incomparable beauty... And so is life."`;
@@ -158,6 +180,8 @@ function backgroundImage(response){
                   document.querySelector(".now-temperature").style.color = "black";
                   document.querySelector(".celsius").style.color = "black";
                   document.querySelector(".underTemp").style.color = "black";
+                  document.querySelector(".magni-img").style.filter = "none";
+                  document.querySelector(".pin-img").style.filter = "none";
       break;
       default:  iconElement.src= "media/mist.png"; 
                 messageElement.innerHTML= `"Everything seems not so clear, but if we wait a bit we will start to understand."`;
@@ -169,6 +193,8 @@ function backgroundImage(response){
                 document.querySelector(".now-temperature").style.color = "black";
                 document.querySelector(".celsius").style.color = "black";
                 document.querySelector(".underTemp").style.color = "black";
+                document.querySelector(".magni-img").style.filter = "none";
+                document.querySelector(".pin-img").style.filter = "none";
     } ;
 
 }  
