@@ -46,7 +46,7 @@ function backgroundImage(response){
                     document.querySelector(".pin-img").style.filter = "none";
       break;
       case "01n": iconElement.src = "media/clear-night.png";
-                  messageElement.innerHTML=`"Have you noticed how beautiful the sky is covered with stars?"`;
+                  messageElement.innerHTML=`"Have you ever noticed how beautiful is the sky covered with stars?"`;
                   colorElement.style.background= "linear-gradient(172deg, rgb(27, 39, 122) 0%, rgb(235, 232, 241) 100%)";
                   document.querySelector(".city").style.color = "#fff";
                   document.querySelector(".more-info").style.color = "#fff";
@@ -59,7 +59,7 @@ function backgroundImage(response){
                   document.querySelector(".pin-img").style.filter = "invert(100%)";
       break;
       case "02d": iconElement.src = "media/few-clouds.png"; 
-                  messageElement.innerHTML = `"There is still a blue sky behind these clouds. They will pass..."`;
+                  messageElement.innerHTML = `"There's still a blue sky behind these clouds. They will pass..."`;
                   colorElement.style.background = "linear-gradient(178deg, rgb(141, 185, 223) 0%, rgb(187, 205, 224) 11%, rgb(245, 248, 250) 65%)";
                   document.querySelector(".city").style.color = "black";
                   document.querySelector(".more-info").style.color = "black";
@@ -72,7 +72,7 @@ function backgroundImage(response){
                   document.querySelector(".pin-img").style.filter = "none"; 
       break;
       case "03d": iconElement.src = "media/few-clouds.png"; 
-                  messageElement.innerHTML = `"There is still a blue sky behind these clouds. They will pass..."`;
+                  messageElement.innerHTML = `"There's still a blue sky behind these clouds. They will pass..."`;
                   colorElement.style.background = "linear-gradient(178deg, rgb(141, 185, 223) 0%, rgb(187, 205, 224) 11%, rgb(245, 248, 250) 65%)";
                   document.querySelector(".city").style.color = "black";
                   document.querySelector(".more-info").style.color = "black";
@@ -85,7 +85,7 @@ function backgroundImage(response){
                   document.querySelector(".pin-img").style.filter = "none";
       break;
       case "04d": iconElement.src = "media/few-clouds.png"; 
-                  messageElement.innerHTML = `"There is still a blue sky behind these clouds. They will pass..."`;
+                  messageElement.innerHTML = `"There's still a blue sky behind these clouds. They will pass..."`;
                   colorElement.style.background = "linear-gradient(178deg, rgb(141, 185, 223) 0%, rgb(187, 205, 224) 11%, rgb(245, 248, 250) 65%)";
                   document.querySelector(".city").style.color = "black";
                   document.querySelector(".more-info").style.color = "black";
@@ -98,7 +98,7 @@ function backgroundImage(response){
                   document.querySelector(".pin-img").style.filter = "none";
       break;
       case "02n": iconElement.src = "media/cloudy-night.png"; 
-                  messageElement.innerHTML = `"There are still bright stars behind these clouds. They will pass..."`;
+                  messageElement.innerHTML = `"Behind these clouds are still stars. They will appear soon..."`;
                   colorElement.style.background = "linear-gradient(180deg, rgb(20, 35, 88) 0%, rgb(132, 148, 198) 41%, rgb(225, 237, 227) 100%)";
                   document.querySelector(".city").style.color = "#fff";
                   document.querySelector(".more-info").style.color = "#fff";
@@ -111,7 +111,7 @@ function backgroundImage(response){
                   document.querySelector(".pin-img").style.filter = "invert(100%)";
       break;
       case "03n": iconElement.src = "media/cloudy-night.png"; 
-                  messageElement.innerHTML = `"There are still bright stars behind these clouds. They will pass..."`;
+                  messageElement.innerHTML = `"Behind these clouds are still stars. They will appear soon..."`;
                   colorElement.style.background = "linear-gradient(180deg, rgb(20, 35, 88) 0%, rgb(132, 148, 198) 41%, rgb(225, 237, 227) 100%)";
                   document.querySelector(".city").style.color = "#fff";
                   document.querySelector(".more-info").style.color = "#fff";
@@ -124,7 +124,7 @@ function backgroundImage(response){
                   document.querySelector(".pin-img").style.filter = "invert(100%)";
       break;
       case "04n": iconElement.src = "media/cloudy-night.png"; 
-                  messageElement.innerHTML = `"There are still bright stars behind these clouds. They will pass..."`;
+                  messageElement.innerHTML = `"Behind these clouds are still stars. They will appear soon..."`;
                   colorElement.style.background = "linear-gradient(180deg, rgb(20, 35, 88) 0%, rgb(132, 148, 198) 41%, rgb(225, 237, 227) 100%)";
                   document.querySelector(".city").style.color = "#fff";
                   document.querySelector(".more-info").style.color = "#fff";
@@ -137,7 +137,7 @@ function backgroundImage(response){
                   document.querySelector(".pin-img").style.filter = "invert(100%)";
       break;
       case "09d": iconElement.src = "media/shower-rain.png";
-                  messageElement.innerHTML = `"Listen to the rain...There is a lot of wisdom in it."`; 
+                  messageElement.innerHTML = `"The rain is so necessary as the sun. There's the right time for everything."`; 
                   colorElement.style.background = "linear-gradient(178deg, rgb(210, 225, 249) 19%, rgb(200, 228, 236) 33%, rgb(245, 248, 250) 65%)";
                   document.querySelector(".city").style.color = "black";
                   document.querySelector(".more-info").style.color = "black";
@@ -150,7 +150,7 @@ function backgroundImage(response){
                   document.querySelector(".pin-img").style.filter = "none";
       break;
       case "10d": iconElement.src = "media/rain.png"; 
-                  messageElement.innerHTML = `"The rain is so necessary as the sun. There is time for everything."`; 
+                  messageElement.innerHTML = `"Listen to the rain...There is a lot of wisdom in it."`; 
                   colorElement.style.background = "linear-gradient(178deg, rgb(177, 189, 220) 5%, rgb(216, 223, 239) 44%, rgb(245, 248, 250) 78%)";
                   document.querySelector(".city").style.color = "black";
                   document.querySelector(".more-info").style.color = "black";
@@ -163,7 +163,7 @@ function backgroundImage(response){
                   document.querySelector(".pin-img").style.filter = "none";
       break;
       case "11d": iconElement.src = "media/thunderstorm.png"; 
-                  messageElement.innerHTML = `"Life can be unpredictable as a storm. Always be prepared for anything!"`;
+                  messageElement.innerHTML = `"Life can be unpredictable as a storm. Be always prepared!"`;
                   colorElement.style.background ="linear-gradient(161deg, rgb(29, 53, 73) 0%, rgb(200, 211, 224) 73%, rgb(245, 248, 250) 100%)";
                   document.querySelector(".city").style.color = "black";
                   document.querySelector(".more-info").style.color = "black";
@@ -176,7 +176,7 @@ function backgroundImage(response){
                   document.querySelector(".pin-img").style.filter = "none";
       break;
       case"13d":  iconElement.src= "media/snow.png"; 
-                  messageElement.innerHTML =`"Snow brings the cold, but also an incomparable beauty... And so is life."`;
+                  messageElement.innerHTML =`"Snow brings the cold, but also an incomparable beauty...Life is also like that."`;
                   colorElement.style.background ="linear-gradient(178deg, rgb(222, 230, 231) 0%, rgb(231, 241, 241) 52%, rgb(245, 248, 250) 100%)";
                   document.querySelector(".city").style.color = "black";
                   document.querySelector(".more-info").style.color = "black";
@@ -341,7 +341,15 @@ function findMe(event) {
   chosenCity("Berlin");
 
   //Hidden link
-  function goHome(){
+  function goGitHub(){
     //<input type="image" src="media/github.png" onclick="hiddenLink()"/>
-    return window.open("https://google.com", "_blank")
+    return window.open("https://github.com/evannyguedes/Good-vibes-weather-app", "_blank")
+  }
+  function goLinkedin(){
+    //<input type="image" src="media/github.png" onclick="hiddenLink()"/>
+    return window.open("https://www.linkedin.com/in/%C3%A9vanny-guedes-belarmino-971777123/", "_blank")
+  }
+  function goMJ(){
+    //<input type="image" src="media/github.png" onclick="hiddenLink()"/>
+    return window.open("https://pixabay.com/pt/users/la_petite_femme-2212305/", "_blank")
   }

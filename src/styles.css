@@ -30,7 +30,7 @@
   top: 20px;
 }
 .magni-img {
-  bottom: 13px;
+  bottom: 12px;
   left: 380px;
   position: relative;
   width: 30px;
@@ -39,7 +39,7 @@
   width: 31px;
 }
 .pin-img{
-  bottom: 13px;
+  bottom: 12px;
   left: 375px;
   position: relative;
   width: 28px;
@@ -258,10 +258,10 @@
   left: 255px;
   max-width: 40px;
   position: relative;
-  top: -145px;
+  top: -140px;
 }
 .hide-mj{
-  bottom: 10px;
+  bottom: 5px;
   color: black;
   display: none;
   font-family: 'Finger Paint', cursive;
@@ -275,4 +275,3 @@
 .sticker-mj:hover +.hide-mj {
   display:block;
 } 
-
