@@ -16,30 +16,34 @@
     <div class="container">
 
             <div class="card" style="background:linear-gradient(180deg, rgb(20, 35, 88) 0%, rgb(132, 148, 198) 41%, rgb(225, 237, 227) 100%)">
-                <form class="formCity" id="form-city">
+
+                <form class="form-city" id="formCity">
                   <div class="search-cities">
                      <input
                        type="text"
                        placeholder="Enter a city..."
                        class="form-control"
-                       id="show-city"
+                       id="showCity"
                      />
                   </div>
                   <input type="image" src="media/magni.png" class="magni-img" style="filter:none"/>
-                  <input type="image" id = "btn-current" src="media/pin.png" class="pin-img" style="filter:none"/>
+                  <input type="image" id = "btnCurrent" src="media/pin.png" class="pin-img" style="filter:none"/>
                 </form>
+
                 <span class="line-top">
                 </span>
+
                 </br>
+
               <div class="information">
                 <div class= "weather row">
                   <div class="current left col-6">
                     <h1 class="city" id="current-city" style="color:black;"> 
                     </h1>
-                    <ul class="moreInfo" style="color:black;">
-                      <li class="dayTime" id="day-time" style="color: black;">
+                    <ul class="more-info" style="color:black;">
+                      <li class="day-time" id="dayTime" style="color: black;">
                       </li>
-                      <li class="weatherDescription" id="description" style="color:black;">
+                      <li class="weather-description" id="description" style="color:black;">
                       </li>
                     </ul>
                   </div>
@@ -50,7 +54,7 @@
                       <span class="celsius" style="color:black;">°C
                       </span>
                     </div>
-                    <ul class="underTemp" style="color:black;">
+                    <ul class="under-temp" style="color:black;">
                       <li> Humidity: 
                       <span id="humidity"> 
                       </span>%
@@ -64,32 +68,36 @@
                   </div>
                 </div>
               </div>
+
               <div class="weather-forecast" id="forecast">
               </div>
-              <img src="media/teste.png" class="yellow-tape" />
+              <img src="media/teste.png" class="big-pin" />
+
               </br>
-              <img id="icon" src="media/sunny-image.png" class="weatherImage" />
+
+              <img id="icon" src="media/sunny-image.png" class="weather-img" />
+
               <p class="motivacional" id="message">
-              </p>
-              
+              </p> 
               <img src="media/pink-tape.png" class="pink-tape-l" />
               <img src="media/pink-tape.png" class="pink-tape-r" />
-              <a href="https://github.com/evannyguedes/Good-vibes-weather-app" target="blank">
+              
+              <a href="https://github.com/evannyguedes/Good-vibes-weather-app" class="hide" target="blank">
                 <img src="media/github.png" class="sticker-git" />
                 <div class="hide-git">Open-source code, by Évanny Belarmino</div>
               </a>
-              <a href="https://www.linkedin.com/in/%C3%A9vanny-guedes-belarmino-971777123/" target="blank">
+              <a href="https://www.linkedin.com/in/%C3%A9vanny-guedes-belarmino-971777123/" class="hide" target="blank">
                 <img src="media/linkedin.png" class="sticker-lkd" />
                 <div class="hide-lkd">Follow me</div>
               </a>
-              <a href="https://pixabay.com/pt/users/la_petite_femme-2212305/" target="blank">
+              <a href="https://pixabay.com/pt/users/la_petite_femme-2212305/" teste="hide" target="blank">
               <img src="media/mj.png" class="sticker-mj" />
               <div class="hide-mj">Images by Mj Jin from Pixabay</div>
               </a>
-
-
+              
             </div>
-    
+      
+    </div>
 </body>
 
 <script src="src/js.js"> 

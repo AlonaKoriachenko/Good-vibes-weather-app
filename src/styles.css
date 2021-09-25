@@ -1,107 +1,100 @@
 .page-body{
   background-color:#fff;
+  
 }  
+
+
 .card { 
     
-    border-radius: 20px;
-    box-shadow: -1px 1px 9px rgba(0, 0, 0, 0.3);
-    display: block;
-    height: 720px;
-    padding: 0;
-    margin: 30px auto;
-    max-width: 450px;
-    width: 100%;
+  border-radius: 20px;
+  box-shadow: -1px 1px 9px rgba(0, 0, 0, 0.3);
+  display: block;
+  height: 720px;
+  margin: 30px auto;
+  max-width: 450px;
+  padding: 0;
+  width: 100%;
 }
 
+/*Top*/
 .form-control{
   border-radius: 7px;
-    box-shadow: -2px 2px 9px rgba(0, 0, 0, 0.4);
-    height: 35px;
-    font-size: 13px;
-    font-family: 'Finger Paint', cursive;
-    left: 10px;
-    max-width: 350px;
-    position: relative;
-    text-decoration: solid;
-    top: 20px;
+  box-shadow: -2px 2px 9px rgba(0, 0, 0, 0.4);
+  height: 35px;
+  font-size: 13px;
+  font-family: 'Finger Paint', cursive;
+  left: 10px;
+  max-width: 365px;
+  position: relative;
+  text-decoration: solid;
+  top: 20px;
 }
-
 .magni-img {
-  width: 25px;
   bottom: 13px;
-  left: 365px;
+  left: 380px;
   position: relative;
   width: 30px;
 }
-
 .magni-img:hover{
   width: 31px;
 }
-  
 .pin-img{
-  width: 25px;
   bottom: 13px;
   left: 375px;
   position: relative;
   width: 28px;
 }
-
 .pin-img:hover{
-   width: 30px;
+ width: 30px;
 }
-
 .line-top{ 
-    border-bottom: 3px solid #fff;
-    display: block;
-    position: relative;
-    top:3px;
-    width: 100%;
+  border-bottom: 3px solid #fff;
+  display: block;
+  position: relative;
+  top:3px;
+  width: 100%;
 }
 
+/*Weather Information*/
 .city {
-    color:black;
-    font-family: 'Cabin Sketch', cursive;
-    font-size: 4vw;
-    padding-left: 15px;
-    padding-top: 12px;
-    margin: 0;
-    width: 100%;
+  color:black;
+  font-family: 'Cabin Sketch', cursive;
+  font-size: 4vw;
+  margin: 0;
+  padding-left: 15px;
+  padding-top: 12px;
+  width: 100%;
 }
-
-.moreInfo{
-    color: black;
-    display: block;
-    font-family: 'Finger Paint', cursive;
-    font-size: 12px;
-    list-style-type:none;
-    margin: 0px;
-    padding: 0px 0px 5px 20px;
-    text-align: left;
-    width: 150px;
+.more-info{
+  color: black;
+  display: block;
+  font-family: 'Finger Paint', cursive;
+  font-size: 12px;
+  list-style-type:none;
+  margin: 0px;
+  padding: 0px 0px 5px 20px;
+  text-align: left;
+  width: 150px;
 }
- 
-.weatherDescription:first-letter{
-    text-transform: capitalize;
+.weather-description:first-letter{
+  text-transform: capitalize;
 }
-
 .weather.row{
   margin:0;
 }
-
 .current.left.col-6{
   background-color: transparent;
   border: none;
+  bottom:0;
   box-shadow: none;
   height: 150px;
-  padding: 0;
-  position: absolute;
   left:0;
-  top:55px;
-  bottom:0;
   margin: 8px 0;
+  padding:0;
+  position: absolute;
+  top:55px;
   width: 450px;
 }
-
 .current.right.col-6{
   background-color: transparent;
   box-shadow: none;
@@ -112,77 +105,70 @@
   top:20px;
   width: 250px;
 }
- 
 .size-temperature{
   height:145px;
   text-align: right;
 }
-
 .now-temperature {
-    font-family: 'Cabin Sketch', cursive;
-    font-size: 130px;
-    margin: 0; 
-    position: relative;
-    left: 5px;
-    text-align: right;
-    
-}
-  
+  font-family: 'Cabin Sketch', cursive;
+  font-size: 130px;
+  left: 5px;
+  margin: 0; 
+  position: relative;
+  text-align: right;  
+} 
 .celsius {
-    font-family: 'Cabin Sketch', cursive;
-    font-size: 60px;
-    position: relative;
-    text-align: right;
-    top:-60px;
+  font-family: 'Cabin Sketch', cursive;
+  font-size: 60px;
+  position: relative;
+  text-align: right;
+  top:-60px;
+}
+.under-temp{
+  font-family: 'Finger Paint', cursive;
+  font-size: 11px;
+  list-style-type:none;
+  text-align: right;
 }
 
-.underTemp{
-    font-family: 'Finger Paint', cursive;
-    font-size: 11px;
-    list-style-type:none;
-    text-align: right;
-}
-
-.yellow-tape{
+/*Forecast Information*/
+.big-pin{
+  left: 210px;
   max-width:60px;
   position: relative;
-  left: 210px;
-  
   top: -250px;
 }
-
 .forecast.row {
-    background: rgba(255, 255, 255, 0.5);
-    border-radius: 10px;
-    box-shadow: 5px 5px 2.5px rgb(0, 0, 0, 0.2);
-    margin:0;
-    max-width: 200px;
-    position: relative;
-    left: 230px;
-    top:35px;
-    
+  background: rgba(255, 255, 255, 0.5);
+  border-radius: 10px;
+  box-shadow: 5px 5px 2.5px rgb(0, 0, 0, 0.2);
+  left: 230px;
+  margin:0;
+  max-width: 200px;
+  position: relative;
+  top:35px;
 }
-
 .forecast.col-6 {
-    font-family: 'Finger Paint', cursive;
-    font-size: 13px;
-    margin: 8px 0;
-    text-align: center;  
+  font-family: 'Finger Paint', cursive;
+  font-size: 13px;
+  margin: 8px 0;
+  text-align: center;  
 }
-
 .forecast-min{
   opacity: 0.5;
 }
 
-.weatherImage {
-    border-radius: 5px;
-    max-width: 200px; 
-    max-height: 450px;
-    position: absolute;
-    left:15px;
-    top:200px;
+/*Background Image*/
+.weather-img {
+  border-radius: 5px;
+  left:15px;
+  max-width: 200px; 
+  max-height: 450px;
+  position: absolute;
+  top:200px;
 }
 
+/*Post-it*/
 .pink-tape-l{
   filter:  contrast(180%) saturate(257%);
   left: 13px;
@@ -190,27 +176,24 @@
   position: absolute;
   top: 590px;
   transform: rotateZ(321deg);
-  
 }
-
 .motivacional{
-    align-items: center;
-    background: rgba(245, 241, 13, 0.6);
-    border-radius: 5px;
-    box-shadow: 4px 4px 2px rgba(0, 0, 0, 0.2);
-    display: flex;
-    font-size: 17px;
-    font-family: 'Sunshiney', cursive;
-    height: 110px;
-    justify-content: center;
-    left: 30px;
-    position: relative;
-    top:-45px;
-    text-align: center;
-    text-indent: 7%;
-    max-width: 160px;
+  align-items: center;
+  background: rgba(245, 241, 13, 0.6);
+  border-radius: 5px;
+  box-shadow: 4px 4px 2px rgba(0, 0, 0, 0.2);
+  display: flex;
+  font-size: 17px;
+  font-family: 'Sunshiney', cursive;
+  height: 110px;
+  justify-content: center;
+  left: 30px;
+  max-width: 160px;
+  position: relative;
+  top:-45px;
+  text-align: center;
+  text-indent: 7%;  
 }
-
 .pink-tape-r{
   filter:  contrast(180%) saturate(257%);
   left:150px;
@@ -220,13 +203,20 @@
   top: 680px;
 }
 
+/*Stickers Bottom*/
+.hide{
+  color:transparent;
+  text-decoration: transparent;
+  cursor:pointer;
+  width: 0;
+  height: 0;
+}
 .sticker-git{
   left: 235px;
   max-width: 60px;
   position: relative;
   top: -140px;
 }
-
 .hide-git{
   color: black;
   bottom: 10px;
@@ -237,22 +227,18 @@
   position: absolute;
 
 }
-
 .sticker-git:hover{
-  max-width: 70px;
+  max-width: 65px;
 }
-
 .sticker-git:hover +.hide-git {
   display:block;
 }
-
 .sticker-lkd{
   left: 245px;
-  max-width: 60px;
+  max-width: 50px;
   position: relative;
   top: -140px;
 }
-
 .hide-lkd{
   bottom: 10px;
   color: black;
@@ -262,22 +248,18 @@
   left: 315px;
   position: absolute;
 }
-
 .sticker-lkd:hover{
-  max-width: 70px;
+  max-width: 55px;
 }
-
 .sticker-lkd:hover +.hide-lkd {
   display:block;
 }
-
 .sticker-mj{
   left: 255px;
   max-width: 40px;
   position: relative;
   top: -145px;
 }
-
 .hide-mj{
   bottom: 10px;
   color: black;
@@ -287,11 +269,10 @@
   left: 245px;
   position: absolute;
 }
-
 .sticker-mj:hover{
   max-width: 45px;
 }
-
 .sticker-mj:hover +.hide-mj {
   display:block;
 } 
+
